@@ -3,7 +3,7 @@ project:
 
 website:
   title: "AD688-GROUP1-F25"
-  navbar:
+  navbar:https://bdegouw_fjoyce_mkhalid.github.io/
     left:
       - href: index.qmd
         text: Home
