@@ -2,10 +2,6 @@
 title: "About"
 ---
 
----
-title: "About Us"
----
-
 # Meet the Team
 
 ## Bowen de Gouw
