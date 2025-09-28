@@ -115,7 +115,7 @@ Send2Trash==1.8.2
 service-identity==24.1.0
 setuptools==68.1.2
 six==1.16.0
-sos==4.8.2
+# sos==4.8.2
 soupsieve==2.5
 ssh-import-id==5.11
 stack-data==0.6.3
