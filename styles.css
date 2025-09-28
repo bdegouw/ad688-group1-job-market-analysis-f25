@@ -30,23 +30,32 @@ h3 {
   font-weight: bold;
 }
 
+/* Page title (YAML title) */
 h1.title {
-  font-size: 3.5em;
-  text-align: center; /* keeps the page title centered */
+  font-size: 2.6em;   /* reduced for readability */
+  text-align: center; /* keeps it centered */
+  margin-bottom: 0.5em;
 }
 
+/* Top-level content headings (#) */
 h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2.2em;
-  margin-top: 1.5em;
-}
-
-h3 {
-  font-size: 1.6em;
+  font-size: 2.2em;   /* slightly smaller than page title */
   margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+/* Subheadings (##) */
+h2 {
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+/* Smaller subheadings (###) */
+h3 {
+  font-size: 1.4em;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
 }
 
 /* Code blocks */
