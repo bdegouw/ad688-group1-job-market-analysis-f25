@@ -34,7 +34,7 @@ executing==2.0.1
 fastjsonschema==2.19.0
 fonttools==4.46.0
 fs==2.4.16
-hibagent==1.0.1
+# hibagent==1.0.1
 html5lib==1.1
 httplib2==0.20.4
 hyperlink==21.0.0
