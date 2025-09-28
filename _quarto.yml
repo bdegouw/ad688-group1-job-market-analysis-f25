@@ -9,8 +9,7 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
-      - text: "GitHub Repo"
-        href: https://bdegouw.github.io/ad688-group1-job-market-analysis-f25/
+
 
 format:
   html:
