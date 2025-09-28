@@ -26,9 +26,9 @@ title: "About Us"
 
 ## Mahnoor Khalid
 - **Program**: MSc Applied Business Analytics, BU MET  
-- **Background**: Overview of academic/work background.  
-- **Interests**: Topics that excite you (e.g., gender equity in the workforce, AI ethics).  
-- **Career Goals**: Future ambitions.  
+- **Background:** Experienced Digital Enablement Executive at Bayer (2021–2025), where I launched Pakistan’s first farmer-focused digital platform, scaled loyalty programs, and drove digital transformation initiatives. Previously, Supply Chain Associate at Nestlé, optimizing efficiency and vendor processes.  
+- **Interests:** Data analytics, cloud technologies, digital transformation, sustainability in supply chains, as well as swimming, cooking, and sports.  
+- **Career Goals:** Aspire to leverage analytics and digital transformation expertise to drive innovation in global business environments, integrating technology and strategy for measurable impact.  
 
 ---
 
