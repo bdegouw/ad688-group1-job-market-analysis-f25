@@ -21,7 +21,32 @@ a:hover {
   color: #ff00aa; /* neon pink hover */
 }
 
-/* === Headings: Unified Neon Cyan === */
-h1, h2, h3, h4, h5, h6 {
-  color: #00ffff; /* Neon cyan */
-  text-shadow: 0px 0px 6px #00ffff, 0px 0px 12px
+/* Headings */
+/* Main page title */
+h1, h1.title {
+  font-size: 3em;
+  color: #00ffff;   /* solid neon cyan */
+  font-weight: bold;
+}
+
+/* Subheadings */
+h2 {
+  font-size: 2.2em;
+  color: #00ff99;   /* solid neon green */
+  margin-top: 1.5em;
+}
+
+/* Smaller headings */
+h3 {
+  font-size: 1.6em;
+  color: #ff00ff;   /* solid neon magenta */
+  margin-top: 1.2em;
+}
+
+/* Code blocks */
+pre, code {
+  background: #1e293b;
+  color: #00ff88;
+  border-radius: 6px;
+  padding: 0.25em 0.5em;
+}
