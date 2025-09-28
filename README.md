@@ -1,6 +1,8 @@
-# ad688-group1-job-market-analysis-f25
+# Analyzing AI vs. Non-AI Careers
 Repo for AD688 Group Project - Group 1, Fall 2025, BU MET MSc ABA
-# Job Market Analysis 2024
+## Introduction
+The rapid growth of artificial intelligence (AI) technologies is reshaping the global job market, creating both opportunities and challenges for workers across industries. AI-driven automation has transformed routine and repetitive tasks, freeing resources for innovation while also raising concerns about job displacement in traditional roles. At the same time, demand for AI specialists, data scientists, and machine learning engineers has surged, making AI-related careers some of the most sought-after and better-compensated professions today. Understanding how salary trends differ between AI and non-AI careers is therefore essential for evaluating the broader economic impact of technological change.
+
 
 
 
