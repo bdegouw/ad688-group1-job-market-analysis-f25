@@ -1,5 +1,11 @@
 ---
 title: "AD688-GROUP1-F25"
+author: "Bowen de Gouw, Feidhelm Joyce, Mahnoor Khalid"
+date: today
+format:
+  html:
+    theme: journal
+    toc: true
 ---
 
 This is a test for the AD688-GROUP1-PROJECT
