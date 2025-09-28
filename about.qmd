@@ -2,4 +2,36 @@
 title: "About"
 ---
 
-About this site
+---
+title: "About Us"
+---
+
+# Meet the Team
+
+## Bowen de Gouw
+- **Program**: MSc Applied Business Analytics, BU MET  
+- **Background**: Briefly describe your academic/professional background (e.g., data analysis, business strategy).  
+- **Interests**: Key interests related to this project (e.g., AI in finance, predictive analytics).  
+- **Career Goals**: 1–2 sentences about future plans.  
+
+---
+
+## Feidhelm Joyce
+- **Program**: MSc Applied Business Analytics, BU MET  
+- **Background**: Short summary of experience/skills.  
+- **Interests**: Areas of research/technical focus (e.g., machine learning, workforce analytics).  
+- **Career Goals**: A couple of sentences about professional aspirations.  
+
+---
+
+## Mahnoor Khalid
+- **Program**: MSc Applied Business Analytics, BU MET  
+- **Background**: Overview of academic/work background.  
+- **Interests**: Topics that excite you (e.g., gender equity in the workforce, AI ethics).  
+- **Career Goals**: Future ambitions.  
+
+---
+
+# Project Motivation
+Our group is passionate about understanding how **AI is transforming the job market**. This project combines our diverse interests and skill sets to explore the differences between AI and traditional careers, with the goal of identifying opportunities and challenges for the workforce of tomorrow.
+
