@@ -1,5 +1,0 @@
----
-title: "AD688-GROUP1-F25"
----
-
-This is my website 
