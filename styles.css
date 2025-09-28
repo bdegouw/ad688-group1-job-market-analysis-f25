@@ -21,33 +21,31 @@ a:hover {
   color: #ff00aa; /* neon pink hover */
 }
 
-/* Headings */
-/* Page title (from YAML) */
+/* Headings — all consistent neon blue */
+h1.title,
+h1,
+h2,
+h3 {
+  color: #00eaff;   /* neon blue */
+  font-weight: bold;
+}
+
 h1.title {
-  font-size: 3.5em;   /* bigger for main title */
-  color: #00ffff;
-  font-weight: bold;
-  text-align: center; /* optional */
+  font-size: 3.5em;
+  text-align: center; /* keeps the page title centered */
 }
 
-/* Content headings (e.g., # Introduction) */
 h1 {
-  font-size: 2.5em;   /* slightly smaller */
-  color: #00ffff;     /* different neon if you want */
-  font-weight: bold;
+  font-size: 2.5em;
 }
 
-/* Subheadings */
 h2 {
   font-size: 2.2em;
-  color: #00ffff;   /* solid neon cyan */
   margin-top: 1.5em;
 }
 
-/* Smaller headings */
 h3 {
   font-size: 1.6em;
-  color: #00ffff;   /* solid neon cyan */
   margin-top: 1.2em;
 }
 
