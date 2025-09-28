@@ -120,7 +120,7 @@ soupsieve==2.5
 ssh-import-id==5.11
 stack-data==0.6.3
 sympy==1.12
-systemd-python==235
+# systemd-python==235
 terminado==0.17.1
 tinycss2==1.2.1
 tornado==6.4
