@@ -33,21 +33,21 @@ h1.title {
 /* Content headings (e.g., # Introduction) */
 h1 {
   font-size: 2.5em;   /* slightly smaller */
-  color: #00ff99;     /* different neon if you want */
+  color: #00ffff;     /* different neon if you want */
   font-weight: bold;
 }
 
 /* Subheadings */
 h2 {
   font-size: 2.2em;
-  color: #00ff99;   /* solid neon cyan */
+  color: #00ffff;   /* solid neon cyan */
   margin-top: 1.5em;
 }
 
 /* Smaller headings */
 h3 {
   font-size: 1.6em;
-  color: #ff00ff;   /* solid neon cyan */
+  color: #00ffff;   /* solid neon cyan */
   margin-top: 1.2em;
 }
 
