@@ -1,10 +1,8 @@
 ---
-title: "About"
+title: "Meet the Team"
 ---
 
-# Meet the Team
-
-## Bowen de Gouw
+# Bowen de Gouw
 - **Program**: MSc Applied Business Analytics, BU MET  
 - **Background**: Briefly describe your academic/professional background (e.g., data analysis, business strategy).  
 - **Interests**: Key interests related to this project (e.g., AI in finance, predictive analytics).  
@@ -12,7 +10,7 @@ title: "About"
 
 ---
 
-## Feidhelm Joyce
+# Feidhelm Joyce
 - **Program**: MSc Applied Business Analytics, BU MET  
 - **Background**: Short summary of experience/skills.  
 - **Interests**: Areas of research/technical focus (e.g., machine learning, workforce analytics).  
@@ -20,7 +18,7 @@ title: "About"
 
 ---
 
-## Mahnoor Khalid
+# Mahnoor Khalid
 - **Program**: MSc Applied Business Analytics, BU MET  
 - **Background:** Experienced Digital Enablement Executive at Bayer (2021–2025), where I launched Pakistan’s first farmer-focused digital platform, scaled loyalty programs, and drove digital transformation initiatives. Previously, Supply Chain Associate at Nestlé, optimizing efficiency and vendor processes.  
 - **Interests:** Data analytics, cloud technologies, digital transformation, sustainability in supply chains, as well as swimming, cooking, and sports.  
@@ -28,6 +26,4 @@ title: "About"
 
 ---
 
-# Project Motivation
-Our group is passionate about understanding how **AI is transforming the job market**. This project combines our diverse interests and skill sets to explore the differences between AI and traditional careers, with the goal of identifying opportunities and challenges for the workforce of tomorrow.
 
