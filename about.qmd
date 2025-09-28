@@ -1,4 +1,6 @@
-# Meet the Team
+---
+title: "Meet the Team"
+---
 
 ## Bowen de Gouw
 - **Program**: MSc Applied Business Analytics, BU MET  
