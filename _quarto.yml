@@ -12,13 +12,18 @@ website:
       - text: "Salary Analysis"
         href: job_market_salary_analysis.ipynb
 
-
 format:
   html:
     theme: darkly
     css: styles.css
     toc: true
     toc-location: right
+    code-fold: false        # hide fold buttons
+    code-tools: false       # no code copy/inspect icons
+    code-block-bg: false
+    code-block-border-left: false
+    code: false             # <-- THIS hides all code globally
+
 
 
 
