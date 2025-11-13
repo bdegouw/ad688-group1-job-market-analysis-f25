@@ -18,11 +18,11 @@ format:
     css: styles.css
     toc: true
     toc-location: right
-    code-fold: false        # hide fold buttons
-    code-tools: false       # no code copy/inspect icons
+    code-fold: false        
+    code-tools: false       
     code-block-bg: false
     code-block-border-left: false
-    code: false             # <-- THIS hides all code globally
+    code: false             
 
 
 
