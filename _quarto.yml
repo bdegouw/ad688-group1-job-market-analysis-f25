@@ -1,8 +1,7 @@
 project:
   type: website
-
-resources:
-  - plots/
+  resources:
+  - plots/*
 
 website:
   title: "AD688-GROUP1-F25"
