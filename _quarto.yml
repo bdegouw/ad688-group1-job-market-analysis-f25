@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - plots/
 
 website:
   title: "AD688-GROUP1-F25"
@@ -18,11 +20,12 @@ format:
     css: styles.css
     toc: true
     toc-location: right
-    code-fold: false        
-    code-tools: false       
+    code-fold: false
+    code-tools: false
     code-block-bg: false
-    code-block-border-left: false 
-    embed-resources: true
+    code-block-border-left: false
+    html-math-method: none
+
            
 
 
