@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "job_market_salary_analysis.html",
+    "href": "job_market_salary_analysis.html",
+    "title": "Job Market Salary Analysis",
+    "section": "",
+    "text": "The Job Market Salary Analysis provides a comprehensive examination of compensation trends across industries, work arrangements, and geographic regions within the United States. Using Lightcast job postings data, this analysis identifies the economic forces shaping salary variation and highlights the factors contributing most significantly to earning potential. By combining statistical summaries, data visualizations, and industry-level comparisons, the page offers a clear and data-driven view of how salaries differ across the labor market.\nThe sections that follow explore several key dimensions of compensation. First, salary levels are compared across major industries to reveal which sectors currently offer the highest median pay. Next, a deeper look at the top-paying industries highlights where specialized skills and technical expertise translate directly into higher earnings. The analysis then turns to remote versus on-site roles, examining how flexible work arrangements influence salary distributions. Finally, a state-level salary map illustrates regional disparities and economic hotspots across the country.\nTogether, these insights provide valuable context for job seekers, employers, and researchers seeking to understand salary dynamics in a rapidly evolving labor environment. Whether evaluating career paths, exploring workforce trends, or assessing competitive pay, this analysis offers a clear and informative overview of the compensation landscape in today’s job market."
+  },
+  {
+    "objectID": "job_market_salary_analysis.html#introduction",
+    "href": "job_market_salary_analysis.html#introduction",
+    "title": "Job Market Salary Analysis",
+    "section": "",
+    "text": "The Job Market Salary Analysis provides a comprehensive examination of compensation trends across industries, work arrangements, and geographic regions within the United States. Using Lightcast job postings data, this analysis identifies the economic forces shaping salary variation and highlights the factors contributing most significantly to earning potential. By combining statistical summaries, data visualizations, and industry-level comparisons, the page offers a clear and data-driven view of how salaries differ across the labor market.\nThe sections that follow explore several key dimensions of compensation. First, salary levels are compared across major industries to reveal which sectors currently offer the highest median pay. Next, a deeper look at the top-paying industries highlights where specialized skills and technical expertise translate directly into higher earnings. The analysis then turns to remote versus on-site roles, examining how flexible work arrangements influence salary distributions. Finally, a state-level salary map illustrates regional disparities and economic hotspots across the country.\nTogether, these insights provide valuable context for job seekers, employers, and researchers seeking to understand salary dynamics in a rapidly evolving labor environment. Whether evaluating career paths, exploring workforce trends, or assessing competitive pay, this analysis offers a clear and informative overview of the compensation landscape in today’s job market."
+  },
+  {
+    "objectID": "job_market_salary_analysis.html#salary-distribution-by-industry",
+    "href": "job_market_salary_analysis.html#salary-distribution-by-industry",
+    "title": "Job Market Salary Analysis",
+    "section": "1. Salary Distribution by Industry",
+    "text": "1. Salary Distribution by Industry\nThis visualization examines median salary differences across major U.S. industries.\n\n\n\n\n\n\n\n\nIndustry\nMedian Salary\n\n\n\n\nAccommodation and Food Services\n$149,850\n\n\nInformation\n$132,600\n\n\nProfessional, Scientific, and Technical Services\n$130,000\n\n\nManufacturing\n$121,300\n\n\nRetail Trade\n$119,925\n\n\nFinance and Insurance\n$118,100\n\n\nConstruction\n$118,098\n\n\nUtilities\n$114,950\n\n\nUnclassified Industry\n$105,000\n\n\nManagement of Companies and Enterprises\n$101,400\n\n\n\n\n\n\nThe table above highlights the ten industries offering the highest median annual salaries in the dataset. Accommodation and Food Services leads all sectors with a median salary of $149,850, followed closely by Information and the Professional, Scientific, and Technical Services sector, both of which consistently demonstrate strong compensation levels. These industries typically require advanced skills, technical expertise, and specialized knowledge, contributing to their elevated pay scales.\nManufacturing, Retail Trade, Finance and Insurance, and Construction also rank among the top-paying industries, reflecting robust demand for skilled labor across diverse economic sectors. Even traditionally steady fields such as Utilities and Management of Companies and Enterprises remain competitive, offering salaries above the national median. Overall, the data underscores the importance of industry selection in shaping earning potential and highlights areas where workers with specialized competencies can expect strong financial returns."
+  },
+  {
+    "objectID": "job_market_salary_analysis.html#top-10-highest-paying-industries",
+    "href": "job_market_salary_analysis.html#top-10-highest-paying-industries",
+    "title": "Job Market Salary Analysis",
+    "section": "2. Top 10 Highest-Paying Industries",
+    "text": "2. Top 10 Highest-Paying Industries\nThis table ranks industries by their median salary using Lightcast job postings data.\n\n\n\n\n\n\n\n\n\nThe chart above highlights the ten highest-paying industries in the labor market based on median salary levels. Accommodation and Food Services unexpectedly ranks at the top, driven largely by high-salary executive, managerial, and corporate leadership roles within major hospitality and food-service corporations. Industries such as Information and Professional, Scientific, and Technical Services also appear at the top of the salary distribution, reflecting the strong demand for specialized technical skills, data expertise, and management roles within these sectors.\nManufacturing, Retail Trade, Finance and Insurance, and Construction also maintain competitive median salaries, indicating continued economic strength and a need for skilled workers across technical and operational roles. Even industries like Utilities and Unclassified Industry categories show high median pay, often influenced by regulated wages, unionized labor, and specialized technical positions. Overall, the ranking demonstrates that high salaries are not limited to traditional white-collar fields, many essential and operational industries continue to offer substantial earning potential in today’s job market."
+  },
+  {
+    "objectID": "job_market_salary_analysis.html#remote-vs.-on-site-salary-comparison",
+    "href": "job_market_salary_analysis.html#remote-vs.-on-site-salary-comparison",
+    "title": "Job Market Salary Analysis",
+    "section": "3. Remote vs. On-Site Salary Comparison",
+    "text": "3. Remote vs. On-Site Salary Comparison\nHere, we compare compensation differences between remote, hybrid, and in-office roles.\n\n\n\n\n\n\n\n\n\nThe salary density chart highlights clear differences between remote and non-remote work arrangements. Both groups peak around the $90,000–$110,000 range, indicating that this salary band represents the most common earning level across the dataset. However, the remote group exhibits a noticeably wider and longer right tail, with salaries extending well beyond $250,000 and reaching above $350,000. In contrast, non-remote salaries taper off much earlier, with far fewer roles exceeding $200,000.\nThis distribution suggests that remote positions are more heavily represented in high-paying fields such as technology, data science, cybersecurity, and other specialized knowledge-based roles. The broader spread of remote salaries also indicates greater variability, meaning remote work encompasses both mid-level and highly senior or niche positions. Meanwhile, the tighter clustering of non-remote salaries reflects more uniform pay structures often found in operational, in-person, or location-dependent industries.\nOverall, the density comparison demonstrates that while typical salaries are similar between the two groups, remote jobs offer significantly higher earning potential, aligning with current labor market trends favoring flexible, high-skill digital roles."
+  },
+  {
+    "objectID": "job_market_salary_analysis.html#salary-differences-across-u.s.-states",
+    "href": "job_market_salary_analysis.html#salary-differences-across-u.s.-states",
+    "title": "Job Market Salary Analysis",
+    "section": "4. Salary Differences Across U.S. States",
+    "text": "4. Salary Differences Across U.S. States\nThis section visualizes how average salaries vary geographically across the United States.\n\n\n        \n        \n        \n\n\n                            \n                                            \n\n\nThe choropleth map highlights clear regional patterns in average annual salaries across the United States. States on the West Coast, including California and Washington, consistently exhibit some of the highest salary levels in the country, often surpassing $120,000. The Northeast shows a similar trend, with Massachusetts, New York, and New Jersey standing out as strong economic hubs where salaries remain well above the national average. These states benefit from dense concentrations of high-skill industries such as technology, finance, biotechnology, and professional services.\nIn contrast, much of the South and parts of the Midwest display lower mean salary ranges, typically between $105,000 and $115,000. States such as West Virginia, Kentucky, and Louisiana fall toward the lower end of the spectrum, reflecting differences in industry mix, labor market dynamics, and cost of living. While these regions may offer more affordable living conditions, the aggregate salary levels highlight persistent regional disparities tied to economic development patterns.\nOverall, the map underscores how geographic location continues to play a significant role in shaping earning potential. Areas with strong innovation sectors, major metropolitan centers, and diversified labor markets tend to command higher compensation, while regions with more traditional or resource-based economies show comparatively modest salary levels. These insights provide important context for individuals evaluating job opportunities and for policymakers seeking to address wage i"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Analyzing AI vs. Non-AI Careers",
+    "section": "",
+    "text": "Introduction\nThe rapid growth of artificial intelligence (AI) technologies is reshaping the global job market, creating both opportunities and challenges for workers across industries. AI-driven automation has transformed routine and repetitive tasks, freeing resources for innovation while also raising concerns about job displacement in traditional roles. At the same time, demand for AI specialists, data scientists, and machine learning engineers has surged, making AI-related careers some of the most sought-after and better-compensated professions today. Understanding how salary trends differ between AI and non-AI careers is therefore essential for evaluating the broader economic impact of technological change."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Meet the Team",
+    "section": "",
+    "text": "Program: MSc Applied Business Analytics, BU MET\n\nBackground: Briefly describe your academic/professional background (e.g., data analysis, business strategy).\n\nInterests: Key interests related to this project (e.g., AI in finance, predictive analytics).\n\nCareer Goals: 1–2 sentences about future plans."
+  },
+  {
+    "objectID": "about.html#bowen-de-gouw",
+    "href": "about.html#bowen-de-gouw",
+    "title": "Meet the Team",
+    "section": "",
+    "text": "Program: MSc Applied Business Analytics, BU MET\n\nBackground: Briefly describe your academic/professional background (e.g., data analysis, business strategy).\n\nInterests: Key interests related to this project (e.g., AI in finance, predictive analytics).\n\nCareer Goals: 1–2 sentences about future plans."
+  },
+  {
+    "objectID": "about.html#feidhelm-joyce",
+    "href": "about.html#feidhelm-joyce",
+    "title": "Meet the Team",
+    "section": "Feidhelm Joyce",
+    "text": "Feidhelm Joyce\n\nProgram: MSc Applied Business Analytics, BU MET\n\nBackground: Graduate student in Applied Business Analytics at Boston University having graduated from Dublin City University with a bachelor’s degree in Business Management in 2022. Experienced in Python, R, SQL, PySpark for data modeling, data engineering, applied analytics, statistical analysis, and cloud-based pipelines. Professional background spans financial analytics, client strategy, and fraud data analysis, blending technical insight with business decision-making across a range of companies from both the US & Ireland.\n\nInterests: Focused on the intersection of machine learning, workforce analytics, and business intelligence. Research interests include predictive modeling, automation impacts on employment, cloud-based data engineering, and applied AI for strategic decision-making. Passionate about bridging the gap between quantitative analytics and organizational transformation through scalable data solutions. Hobbies away from the desk include Hurling, Gaelic Football, Soccer & Golf.\nCareer Goals: Aspire to build a career as a data and analytics consultant or business intelligence strategist, leveraging data science and automation to guide evidence-based decisions in corporate and policy settings."
+  },
+  {
+    "objectID": "about.html#mahnoor-khalid",
+    "href": "about.html#mahnoor-khalid",
+    "title": "Meet the Team",
+    "section": "Mahnoor Khalid",
+    "text": "Mahnoor Khalid\n\nProgram: MSc Applied Business Analytics, BU MET\n\nBackground: Experienced Digital Enablement Executive at Bayer (2021–2025), where I launched Pakistan’s first farmer-focused digital platform, scaled loyalty programs, and drove digital transformation initiatives. Previously, Supply Chain Associate at Nestlé, optimizing efficiency and vendor processes.\n\nInterests: Data analytics, cloud technologies, digital transformation, sustainability in supply chains, as well as swimming, cooking, and sports.\n\nCareer Goals: Aspire to leverage analytics and digital transformation expertise to drive innovation in global business environments, integrating technology and strategy for measurable impact."
+  }
+]
