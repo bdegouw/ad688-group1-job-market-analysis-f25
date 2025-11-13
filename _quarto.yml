@@ -10,8 +10,7 @@ website:
       - text: "About"
         href: about.qmd
       - text: "Salary Analysis"
-      href: job_market_salary_analysis.ipynb
-
+        href: job_market_salary_analysis.ipynb
 
 
 format:
