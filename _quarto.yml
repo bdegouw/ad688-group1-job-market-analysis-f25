@@ -21,7 +21,9 @@ format:
     code-fold: false        
     code-tools: false       
     code-block-bg: false
-    code-block-border-left: false             
+    code-block-border-left: false 
+    embed-resources: true
+    include-after-body: plotly.html            
 
 
 
