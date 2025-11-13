@@ -21,8 +21,7 @@ format:
     code-fold: false        
     code-tools: false       
     code-block-bg: false
-    code-block-border-left: false
-    code: false             
+    code-block-border-left: false             
 
 
 
