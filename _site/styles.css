@@ -1,0 +1,67 @@
+/* === AI THEME OVERRIDES === */
+
+/* Background + text */
+body {
+  background-color: #0d1117;   /* dark background */
+  color: #e6edf3;             /* light text */
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111827;  /* near black */
+  border-bottom: 2px solid #00eaff; /* neon accent */
+}
+
+/* Links */
+a {
+  color: #00eaff;
+}
+a:hover {
+  color: #ff00aa; /* neon pink hover */
+}
+
+/* Headings — all consistent neon blue */
+h1.title,
+h1,
+h2,
+h3 {
+  color: #00eaff;   /* neon blue */
+  font-weight: bold;
+}
+
+/* Page title (YAML title) */
+h1.title {
+  font-size: 2.6em;   /* reduced for readability */
+  text-align: center; /* keeps it centered */
+  margin-bottom: 0.5em;
+}
+
+/* Top-level content headings (#) */
+h1 {
+  font-size: 2.2em;   /* slightly smaller than page title */
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+/* Subheadings (##) */
+h2 {
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+/* Smaller subheadings (###) */
+h3 {
+  font-size: 1.4em;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+/* Code blocks */
+pre, code {
+  background: #1e293b;
+  color: #00ff88;
+  border-radius: 6px;
+  padding: 0.25em 0.5em;
+}
