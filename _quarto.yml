@@ -23,7 +23,7 @@ format:
     code-block-bg: false
     code-block-border-left: false 
     embed-resources: true
-    include-after-body: plotly.html            
+           
 
 
 
