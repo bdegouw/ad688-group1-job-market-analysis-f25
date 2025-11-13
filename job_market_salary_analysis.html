@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -4064,251 +4029,134 @@ if (outputEl) {{
 
 
 
-<div id="ca758549" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">"ggplot"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"data/lightcast_job_postings.csv"</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>df.head()</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<div>
+<div id="312ce7d8" class="cell" data-execution_count="45">
+<div class="cell-output cell-output-display" data-execution_count="45">
+<style type="text/css">
+#T_1c82b caption {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#T_1c82b th {
+  background-color: #003049;
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+}
+#T_1c82b th.col_heading.level0.col0 {
+  text-align: center;
+}
+#T_1c82b td {
+  font-size: 13px;
+  padding: 6px;
+}
+#T_1c82b_row0_col1 {
+  background-color: #08306b;
+  color: #f1f1f1;
+}
+#T_1c82b_row1_col1 {
+  background-color: #3d8dc4;
+  color: #f1f1f1;
+}
+#T_1c82b_row2_col1 {
+  background-color: #4d99ca;
+  color: #f1f1f1;
+}
+#T_1c82b_row3_col1 {
+  background-color: #8fc2de;
+  color: #000000;
+}
+#T_1c82b_row4_col1 {
+  background-color: #9cc9e1;
+  color: #000000;
+}
+#T_1c82b_row5_col1, #T_1c82b_row6_col1 {
+  background-color: #a8cee4;
+  color: #000000;
+}
+#T_1c82b_row7_col1 {
+  background-color: #bdd7ec;
+  color: #000000;
+}
+#T_1c82b_row8_col1 {
+  background-color: #e8f1fa;
+  color: #000000;
+}
+#T_1c82b_row9_col1 {
+  background-color: #f7fbff;
+  color: #000000;
+}
+</style>
 
-
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<div id="T_1c82b" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-postprocess="true">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="T_1c82b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Top 10 Industries by Median Annual Salary
+</figcaption>
+<div aria-describedby="T_1c82b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="T_1c82b" class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">ID</th>
-<th data-quarto-table-cell-role="th">LAST_UPDATED_DATE</th>
-<th data-quarto-table-cell-role="th">LAST_UPDATED_TIMESTAMP</th>
-<th data-quarto-table-cell-role="th">DUPLICATES</th>
-<th data-quarto-table-cell-role="th">POSTED</th>
-<th data-quarto-table-cell-role="th">EXPIRED</th>
-<th data-quarto-table-cell-role="th">DURATION</th>
-<th data-quarto-table-cell-role="th">SOURCE_TYPES</th>
-<th data-quarto-table-cell-role="th">SOURCES</th>
-<th data-quarto-table-cell-role="th">URL</th>
-<th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_2</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_2_NAME</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_3</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_3_NAME</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_4</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_4_NAME</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_5</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_5_NAME</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_6</th>
-<th data-quarto-table-cell-role="th">NAICS_2022_6_NAME</th>
+<th id="T_1c82b_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Industry</th>
+<th id="T_1c82b_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Median Salary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>1f57d95acf4dc67ed2819eb12f049f6a5c11782c</td>
-<td>9/6/2024</td>
-<td>2024-09-06 20:32:57.352 Z</td>
-<td>0.0</td>
-<td>6/2/2024</td>
-<td>6/8/2024</td>
-<td>6.0</td>
-<td>[\n "Company"\n]</td>
-<td>[\n "brassring.com"\n]</td>
-<td>[\n "https://sjobs.brassring.com/TGnewUI/Sear...</td>
-<td>...</td>
-<td>44.0</td>
-<td>Retail Trade</td>
-<td>441.0</td>
-<td>Motor Vehicle and Parts Dealers</td>
-<td>4413.0</td>
-<td>Automotive Parts, Accessories, and Tire Retailers</td>
-<td>44133.0</td>
-<td>Automotive Parts and Accessories Retailers</td>
-<td>441330.0</td>
-<td>Automotive Parts and Accessories Retailers</td>
+<td id="T_1c82b_row0_col0" class="data row0 col0">Accommodation and Food Services</td>
+<td id="T_1c82b_row0_col1" class="data row0 col1">$149,850</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>0cb072af26757b6c4ea9464472a50a443af681ac</td>
-<td>8/2/2024</td>
-<td>2024-08-02 17:08:58.838 Z</td>
-<td>0.0</td>
-<td>6/2/2024</td>
-<td>8/1/2024</td>
-<td>NaN</td>
-<td>[\n "Job Board"\n]</td>
-<td>[\n "maine.gov"\n]</td>
-<td>[\n "https://joblink.maine.gov/jobs/1085740"\n]</td>
-<td>...</td>
-<td>56.0</td>
-<td>Administrative and Support and Waste Managemen...</td>
-<td>561.0</td>
-<td>Administrative and Support Services</td>
-<td>5613.0</td>
-<td>Employment Services</td>
-<td>56132.0</td>
-<td>Temporary Help Services</td>
-<td>561320.0</td>
-<td>Temporary Help Services</td>
+<td id="T_1c82b_row1_col0" class="data row1 col0">Information</td>
+<td id="T_1c82b_row1_col1" class="data row1 col1">$132,600</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>85318b12b3331fa490d32ad014379df01855c557</td>
-<td>9/6/2024</td>
-<td>2024-09-06 20:32:57.352 Z</td>
-<td>1.0</td>
-<td>6/2/2024</td>
-<td>7/7/2024</td>
-<td>35.0</td>
-<td>[\n "Job Board"\n]</td>
-<td>[\n "dejobs.org"\n]</td>
-<td>[\n "https://dejobs.org/dallas-tx/data-analys...</td>
-<td>...</td>
-<td>52.0</td>
-<td>Finance and Insurance</td>
-<td>524.0</td>
-<td>Insurance Carriers and Related Activities</td>
-<td>5242.0</td>
-<td>Agencies, Brokerages, and Other Insurance Rela...</td>
-<td>52429.0</td>
-<td>Other Insurance Related Activities</td>
-<td>524291.0</td>
-<td>Claims Adjusting</td>
+<td id="T_1c82b_row2_col0" class="data row2 col0">Professional, Scientific, and Technical Services</td>
+<td id="T_1c82b_row2_col1" class="data row2 col1">$130,000</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>1b5c3941e54a1889ef4f8ae55b401a550708a310</td>
-<td>9/6/2024</td>
-<td>2024-09-06 20:32:57.352 Z</td>
-<td>1.0</td>
-<td>6/2/2024</td>
-<td>7/20/2024</td>
-<td>48.0</td>
-<td>[\n "Job Board"\n]</td>
-<td>[\n "disabledperson.com",\n "dejobs.org"\n]</td>
-<td>[\n "https://www.disabledperson.com/jobs/5948...</td>
-<td>...</td>
-<td>52.0</td>
-<td>Finance and Insurance</td>
-<td>522.0</td>
-<td>Credit Intermediation and Related Activities</td>
-<td>5221.0</td>
-<td>Depository Credit Intermediation</td>
-<td>52211.0</td>
-<td>Commercial Banking</td>
-<td>522110.0</td>
-<td>Commercial Banking</td>
+<td id="T_1c82b_row3_col0" class="data row3 col0">Manufacturing</td>
+<td id="T_1c82b_row3_col1" class="data row3 col1">$121,300</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>cb5ca25f02bdf25c13edfede7931508bfd9e858f</td>
-<td>6/19/2024</td>
-<td>2024-06-19 07:00:00.000 Z</td>
-<td>0.0</td>
-<td>6/2/2024</td>
-<td>6/17/2024</td>
-<td>15.0</td>
-<td>[\n "FreeJobBoard"\n]</td>
-<td>[\n "craigslist.org"\n]</td>
-<td>[\n "https://modesto.craigslist.org/sls/77475...</td>
-<td>...</td>
-<td>99.0</td>
-<td>Unclassified Industry</td>
-<td>999.0</td>
-<td>Unclassified Industry</td>
-<td>9999.0</td>
-<td>Unclassified Industry</td>
-<td>99999.0</td>
-<td>Unclassified Industry</td>
-<td>999999.0</td>
-<td>Unclassified Industry</td>
+<td id="T_1c82b_row4_col0" class="data row4 col0">Retail Trade</td>
+<td id="T_1c82b_row4_col1" class="data row4 col1">$119,925</td>
+</tr>
+<tr class="even">
+<td id="T_1c82b_row5_col0" class="data row5 col0">Finance and Insurance</td>
+<td id="T_1c82b_row5_col1" class="data row5 col1">$118,100</td>
+</tr>
+<tr class="odd">
+<td id="T_1c82b_row6_col0" class="data row6 col0">Construction</td>
+<td id="T_1c82b_row6_col1" class="data row6 col1">$118,098</td>
+</tr>
+<tr class="even">
+<td id="T_1c82b_row7_col0" class="data row7 col0">Utilities</td>
+<td id="T_1c82b_row7_col1" class="data row7 col1">$114,950</td>
+</tr>
+<tr class="odd">
+<td id="T_1c82b_row8_col0" class="data row8 col0">Unclassified Industry</td>
+<td id="T_1c82b_row8_col1" class="data row8 col1">$105,000</td>
+</tr>
+<tr class="even">
+<td id="T_1c82b_row9_col0" class="data row9 col0">Management of Companies and Enterprises</td>
+<td id="T_1c82b_row9_col1" class="data row9 col1">$101,400</td>
 </tr>
 </tbody>
 </table>
-
-<p>5 rows × 131 columns</p>
+</div>
+</figure>
 </div>
 </div>
 </div>
-<div id="cd3924d4" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">"SALARY"</span>].notna()]</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"SALARY"</span>] <span class="op">=</span> df[<span class="st">"SALARY"</span>].astype(<span class="bu">float</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Total rows with salary:"</span>, <span class="bu">len</span>(df))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Total rows with salary: 30808</code></pre>
-</div>
-</div>
-<div id="312ce7d8" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"PRIMARY_SECTOR"</span>] <span class="op">=</span> df[<span class="st">"LIGHTCAST_SECTORS_NAME"</span>].<span class="bu">str</span>.split(<span class="st">","</span>).<span class="bu">str</span>[<span class="dv">0</span>].<span class="bu">str</span>.replace(<span class="st">'"'</span>,<span class="st">''</span>).<span class="bu">str</span>.strip()</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>industry_salary <span class="op">=</span> (</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    df.groupby(<span class="st">"NAICS2_NAME"</span>)[<span class="st">"SALARY"</span>]</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    .median()</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    .sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    .head(<span class="dv">10</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>industry_salary</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
-<pre><code>NAICS2_NAME
-Accommodation and Food Services                     149850.0
-Information                                         132600.0
-Professional, Scientific, and Technical Services    130000.0
-Manufacturing                                       121300.0
-Retail Trade                                        119925.0
-Finance and Insurance                               118100.0
-Construction                                        118097.5
-Utilities                                           114950.0
-Unclassified Industry                               105000.0
-Management of Companies and Enterprises             101400.0
-Name: SALARY, dtype: float64</code></pre>
-</div>
-</div>
+<p>The table above highlights the ten industries offering the highest median annual salaries in the dataset. Accommodation and Food Services leads all sectors with a median salary of $149,850, followed closely by Information and the Professional, Scientific, and Technical Services sector, both of which consistently demonstrate strong compensation levels. These industries typically require advanced skills, technical expertise, and specialized knowledge, contributing to their elevated pay scales.</p>
+<p>Manufacturing, Retail Trade, Finance and Insurance, and Construction also rank among the top-paying industries, reflecting robust demand for skilled labor across diverse economic sectors. Even traditionally steady fields such as Utilities and Management of Companies and Enterprises remain competitive, offering salaries above the national median. Overall, the data underscores the importance of industry selection in shaping earning potential and highlights areas where workers with specialized competencies can expect strong financial returns.</p>
 <div id="b72f7980" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.ticker <span class="im">as</span> ticker</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">"whitegrid"</span>)  </span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">8</span>))</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.barplot(</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>industry_salary.values,</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>industry_salary.index,</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    palette<span class="op">=</span><span class="st">"viridis"</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Title &amp; labels</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Top 10 Highest Paying Industries"</span>, fontsize<span class="op">=</span><span class="dv">18</span>, weight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Median Salary (USD)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Industry"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Add comma formatting to the x-axis</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_formatter(ticker.FuncFormatter(<span class="kw">lambda</span> x, _: <span class="ss">f"</span><span class="sc">{</span><span class="bu">int</span>(x)<span class="sc">:,}</span><span class="ss">"</span>))</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Tight layout for spacing</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_4941/1972646732.py:9: FutureWarning: 
-
-Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
-
-  ax = sns.barplot(</code></pre>
-</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="job_market_salary_analysis_files/figure-html/cell-5-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="job_market_salary_analysis_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -4317,51 +4165,10 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 <p>The chart above highlights the ten highest-paying industries in the labor market based on median salary levels. Accommodation and Food Services unexpectedly ranks at the top, driven largely by high-salary executive, managerial, and corporate leadership roles within major hospitality and food-service corporations. Industries such as Information and Professional, Scientific, and Technical Services also appear at the top of the salary distribution, reflecting the strong demand for specialized technical skills, data expertise, and management roles within these sectors.</p>
 <p>Manufacturing, Retail Trade, Finance and Insurance, and Construction also maintain competitive median salaries, indicating continued economic strength and a need for skilled workers across technical and operational roles. Even industries like Utilities and Unclassified Industry categories show high median pay, often influenced by regulated wages, unionized labor, and specialized technical positions. Overall, the ranking demonstrates that high salaries are not limited to traditional white-collar fields, many essential and operational industries continue to offer substantial earning potential in today’s job market.</p>
 <div id="52de9b55" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.ticker <span class="im">as</span> ticker</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">7</span>))</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>sns.kdeplot(</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    df_remote[df_remote[<span class="st">"REMOTE_TYPE_NAME"</span>] <span class="op">==</span> <span class="st">"Remote"</span>][<span class="st">"SALARY"</span>],</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    fill<span class="op">=</span><span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.45</span>, linewidth<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    label<span class="op">=</span><span class="st">"Remote"</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>sns.kdeplot(</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    df_remote[df_remote[<span class="st">"REMOTE_TYPE_NAME"</span>] <span class="op">==</span> <span class="st">"Not Remote"</span>][<span class="st">"SALARY"</span>],</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    fill<span class="op">=</span><span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.45</span>, linewidth<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    label<span class="op">=</span><span class="st">"Not Remote"</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>plt.title(</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Salary Density by Work Arrangement"</span>,</span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">26</span>,</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    weight<span class="op">=</span><span class="st">"bold"</span>,</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    loc<span class="op">=</span><span class="st">"center"</span>,    </span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    pad<span class="op">=</span><span class="dv">20</span>           </span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Annual Salary (USD)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Density"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>plt.gca().xaxis.set_major_formatter(</span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    ticker.FuncFormatter(<span class="kw">lambda</span> x, _: <span class="ss">f"</span><span class="sc">{</span><span class="bu">int</span>(x)<span class="sc">:,}</span><span class="ss">"</span>)</span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Work Arrangement"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, title_fontsize<span class="op">=</span><span class="dv">13</span>, loc<span class="op">=</span><span class="st">"upper right"</span>)</span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="job_market_salary_analysis_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="job_market_salary_analysis_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -4369,54 +4176,6 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 <p>The salary density chart highlights clear differences between remote and non-remote work arrangements. Both groups peak around the $90,000–$110,000 range, indicating that this salary band represents the most common earning level across the dataset. However, the remote group exhibits a noticeably wider and longer right tail, with salaries extending well beyond $250,000 and reaching above $350,000. In contrast, non-remote salaries taper off much earlier, with far fewer roles exceeding $200,000.</p>
 <p>This distribution suggests that remote positions are more heavily represented in high-paying fields such as technology, data science, cybersecurity, and other specialized knowledge-based roles. The broader spread of remote salaries also indicates greater variability, meaning remote work encompasses both mid-level and highly senior or niche positions. Meanwhile, the tighter clustering of non-remote salaries reflects more uniform pay structures often found in operational, in-person, or location-dependent industries.</p>
 <p>Overall, the density comparison demonstrates that while typical salaries are similar between the two groups, remote jobs offer significantly higher earning potential, aligning with current labor market trends favoring flexible, high-skill digital roles.</p>
-<div id="78606db6" class="cell" data-execution_count="39">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> us</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df_map <span class="op">=</span> df.copy()</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep only valid states and non-missing salaries</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>df_map <span class="op">=</span> df_map[df_map[<span class="st">'STATE_NAME'</span>].notna()]</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>df_map[<span class="st">'SALARY'</span>] <span class="op">=</span> pd.to_numeric(df_map[<span class="st">'SALARY'</span>], errors<span class="op">=</span><span class="st">'coerce'</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>df_map <span class="op">=</span> df_map[df_map[<span class="st">'SALARY'</span>].notna()]</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Strip whitespace</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>df_map[<span class="st">'STATE_NAME'</span>] <span class="op">=</span> df_map[<span class="st">'STATE_NAME'</span>].<span class="bu">str</span>.strip()</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert full names → state abbreviations</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> to_abbrev(name):</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    state <span class="op">=</span> us.states.lookup(name)</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> state.abbr <span class="cf">if</span> state <span class="cf">else</span> <span class="va">None</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>df_map[<span class="st">'STATE_ABB'</span>] <span class="op">=</span> df_map[<span class="st">'STATE_NAME'</span>].<span class="bu">apply</span>(to_abbrev)</span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop any state that didn't convert</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>df_map <span class="op">=</span> df_map[df_map[<span class="st">'STATE_ABB'</span>].notna()]</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Group for mapping</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>state_salary <span class="op">=</span> (</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    df_map.groupby(<span class="st">'STATE_ABB'</span>)[<span class="st">'SALARY'</span>]</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    .mean()</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    .reset_index()</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Choropleth map</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.choropleth(</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>    state_salary,</span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    locations<span class="op">=</span><span class="st">"STATE_ABB"</span>,</span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    locationmode<span class="op">=</span><span class="st">"USA-states"</span>,</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">"SALARY"</span>,</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>    color_continuous_scale<span class="op">=</span><span class="st">"tempo"</span>,</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>    scope<span class="op">=</span><span class="st">"usa"</span>,</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Mean Annual Salary by U.S. State"</span>,</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"SALARY"</span>: <span class="st">"Salary (USD)"</span>}</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>fig.update_layout(title_x<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <p>The choropleth map reveals clear geographic patterns in U.S. salary distribution, reflecting both regional economic structures and cost-of-living dynamics. States on the West Coast and in the Northeast consistently exhibit the highest average annual salaries, with several surpassing $120,000. California and Washington, for example, benefit from strong concentrations of technology, biotech, and advanced services industries, which drive salaries upward. Similarly, states such as New York, New Jersey, and Massachusetts reflect the influence of finance, healthcare, and professional services hubs, contributing to some of the highest compensation levels in the country. In contrast, many Southern and Midwestern states cluster toward the lower end of the salary distribution, with averages frequently between $100,000 and $110,000. These states tend to be characterized by lower costs of living, a greater proportion of traditional industries, and less concentration of high-income professional sectors. Notably, the states with the lowest mean salaries in this dataset fall just under $100,000, while the highest exceed $128,000, producing a spread of nearly $30,000 across the country. Overall, the national average salary in this dataset is approximately $114,000. Though salary levels vary significantly across regions, this variation aligns closely with broader economic trends, including labor market specialization, urbanization, and local demand for high-skill occupations. The resulting geographic landscape provides valuable context for understanding compensation differences and highlights how location continues to play a substantial role in shaping earnings potential in the United States.</p>
 
 
