@@ -1,6 +1,7 @@
 project:
   type: website
-  resources:
+  
+resources:
   - plots/*
 
 website:
