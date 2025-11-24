@@ -2,10 +2,6 @@
 title: "Analyzing AI vs. Non-AI Careers"
 author: "Bowen de Gouw, Feidhelm Joyce, Mahnoor Khalid"
 date: today
-format:
-  html:
-    theme: journal
-    toc: true
 ---
 
 # Introduction

@@ -1,15 +1,16 @@
 /* ===================================== */
-/* Global Font + Global Sizing System     */
+/* Global Font + Global Sizing System    */
 /* ===================================== */
 
 body {
+  margin: 0;  /* remove default browser margin so navbar is at very top */
   font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;          /* base size */
+  font-size: 16px;
   line-height: 1.6;
-  color: #064e3b;           /* deep green text */
+  color: #064e3b; /* deep green text */
 }
 
-/* Headings hierarchy */
+/* Headings */
 h1 {
   font-size: 2.2rem;
   font-weight: 700;
@@ -42,28 +43,30 @@ a {
 }
 
 /* ===================================== */
-/* Navbar - Mint Theme                    */
+/* Navbar - Mint Theme (NOT fixed)       */
 /* ===================================== */
 
 .navbar {
-  background-color: #8ef5c4; /* mint */
+  background-color: #8ef5c4; /* mint green */
 }
 
 /* Navbar links */
 .navbar-nav .nav-link {
   color: #064e3b !important;
   font-weight: 500;
-  font-size: 1rem;         /* consistent size */
+  font-size: 1rem;
 }
 
 /* Hover */
 .navbar-nav .nav-link:hover {
+  color: #064e3b !important;
   background-color: #bfffe0;
   border-radius: 4px;
 }
 
 /* Active link */
 .navbar-nav .nav-link.active {
+  color: #064e3b !important;
   border-bottom: 2px solid #064e3b;
 }
 
@@ -71,7 +74,7 @@ a {
 .navbar-brand {
   color: #064e3b !important;
   font-weight: 700;
-  font-size: 1.25rem;      /* slightly larger than nav links */
+  font-size: 1.25rem;
 }
 
 /* ===================================== */
@@ -86,9 +89,10 @@ a {
 .dropdown-item {
   color: #064e3b !important;
   font-weight: 500;
-  font-size: 1rem;         /* matching body/nav */
+  font-size: 1rem;
 }
 
 .dropdown-item:hover {
   background-color: #8ef5c4;
+  color: #064e3b !important;
 }
