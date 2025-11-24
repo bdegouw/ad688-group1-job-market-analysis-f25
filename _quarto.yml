@@ -19,9 +19,9 @@ website:
           - text: "Salary Analysis"
             href: job_market_salary_analysis.ipynb
           - text: "Analysis #2"
-            href: bowen_analysis.ipynb
+            href: bowen_analysis.qmd
           - text: "Analysis #3"
-            href: feidhelm_analysis.ipynb
+            href: feidhelm_analysis.qmd
       - text: "Career Plans"
         href: career_plan.qmd
       - text: "References"
