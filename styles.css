@@ -1,61 +1,94 @@
-/* =============================== */
-/* Mint Green Navbar (Fixed)       */
-/* =============================== */
+/* ===================================== */
+/* Global Font + Global Sizing System     */
+/* ===================================== */
 
-/* Make navbar fixed */
-.navbar {
-  background-color: #8ef5c4; /* mint green */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+body {
+  font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;          /* base size */
+  line-height: 1.6;
+  color: #064e3b;           /* deep green text */
 }
 
-/* Prevent content from hiding under navbar */
-body {
-  padding-top: 70px; /* adjust based on navbar height */
+/* Headings hierarchy */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4, h5, h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Paragraphs, list items */
+p, li {
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* ===================================== */
+/* Navbar - Mint Theme                    */
+/* ===================================== */
+
+.navbar {
+  background-color: #8ef5c4; /* mint */
 }
 
 /* Navbar links */
 .navbar-nav .nav-link {
-  color: #064e3b !important;  /* deep green */
+  color: #064e3b !important;
   font-weight: 500;
+  font-size: 1rem;         /* consistent size */
 }
 
-/* Hover color */
+/* Hover */
 .navbar-nav .nav-link:hover {
-  color: #064e3b !important;
-  background-color: #bfffe0; /* lighter mint hover */
+  background-color: #bfffe0;
   border-radius: 4px;
 }
 
 /* Active link */
 .navbar-nav .nav-link.active {
-  color: #064e3b !important;
   border-bottom: 2px solid #064e3b;
 }
 
-/* Site title (brand) */
+/* Site title */
 .navbar-brand {
   color: #064e3b !important;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.25rem;      /* slightly larger than nav links */
 }
 
-/* =============================== */
-/* Dropdown Menu Styling           */
-/* =============================== */
+/* ===================================== */
+/* Dropdown Menu Styling                  */
+/* ===================================== */
 
 .dropdown-menu {
-  background-color: #bfffe0; /* light mint */
+  background-color: #bfffe0;
   border: 1px solid #8ef5c4;
 }
 
 .dropdown-item {
   color: #064e3b !important;
   font-weight: 500;
+  font-size: 1rem;         /* matching body/nav */
 }
 
 .dropdown-item:hover {
-  background-color: #8ef5c4; /* same as navbar */
-  color: #064e3b !important;
+  background-color: #8ef5c4;
 }
