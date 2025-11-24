@@ -3,10 +3,10 @@ title: "Meet the Team"
 ---
 
 ## Bowen de Gouw
-- **Program**: MSc Applied Business Analytics, BU MET  
-- **Background**: Briefly describe your academic/professional background (e.g., data analysis, business strategy).  
-- **Interests**: Key interests related to this project (e.g., AI in finance, predictive analytics).  
-- **Career Goals**: 1–2 sentences about future plans.  
+**Program**: MSc Applied Business Analytics, Boston University
+**Background**: Completed a Bachelor of Science in Business Administration at  Boston University's Questrom Business School, then joined the MET ABA program to develop technical analytical skills.  Internship experience in Business Development and Life Sciences Consulting. 
+**Interests**: Leveraging AI/Machine Learning Skillset  Big Data, Early Career Development
+**Career Goals**:  I strive to leverage AI and Machine Learning to enhance big data analysis, improve business effectiveness, and advance my career in the field.I’m passionate about uncovering hidden insights within consumer and sales data to drive strategic decisions for both brick-and-mortar and e-commerce platforms. 
 
 ---
 
