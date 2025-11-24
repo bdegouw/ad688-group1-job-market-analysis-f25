@@ -10,10 +10,17 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "About"
+      - text: "About Us"
         href: about.qmd
+      - text: "Research Background"
+        href: research_introduction.qmd
       - text: "Salary Analysis"
         href: job_market_salary_analysis.ipynb
+      - text: "Career Plans"
+        href: career_plan.qmd
+      - text: "References"
+        href: references.bib
+
 
 format:
   html:
