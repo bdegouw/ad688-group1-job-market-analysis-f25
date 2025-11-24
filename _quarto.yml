@@ -27,14 +27,10 @@ website:
       - text: "References"
         href: references.bib
 
-
 format:
   html:
-    theme: custom-minty.scss
+    theme:
+      - cosmo
+      - brand
     css: styles.css
     toc: true
-    toc-location: right
-    code-fold: false
-    code-tools: false
-    code-block-bg: false
-    code-block-border-left: false
