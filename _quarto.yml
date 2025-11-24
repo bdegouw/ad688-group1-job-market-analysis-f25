@@ -14,8 +14,14 @@ website:
         href: about.qmd
       - text: "Research Background"
         href: research_introduction.qmd
-      - text: "Salary Analysis"
-        href: job_market_salary_analysis.ipynb
+      - text: Analysis
+        menu:
+          - text: "Salary Analysis"
+            href: job_market_salary_analysis.ipynb
+          - text: "Analysis #2"
+            href: bowen_analysis.ipynb
+          - text: "Analysis #3"
+            href: feidhelm_analysis.ipynb
       - text: "Career Plans"
         href: career_plan.qmd
       - text: "References"
