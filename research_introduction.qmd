@@ -5,7 +5,6 @@ authors:
     - name: "Feidhelm Joyce"
     - name: "Mahnoor Khalid"
 date: today
-date: today
 format: 
   html:
     bibliography: references.bib
