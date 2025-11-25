@@ -12,14 +12,14 @@ The rapid growth of artificial intelligence (AI) technologies is reshaping the g
 
 ---
 
-## Research Rationale
+# Research Rationale
 The rise of AI is reshaping the labor market, but students entering the job market still face uncertainty about how much AI skills actually affect pay, where the best-paying roles are located, and whether remote jobs offer a true financial advantage. For our team, three students preparing to graduate, this topic is directly tied to our own career decisions. We want to understand how to differentiate ourselves with AI-related skills and titles (e.g., data analyst, machine learning engineer, prompt engineer) in ways that concretely improve salary and employability, not just “sound good” on a résumé.
 In 2024, multiple reports show that job postings mentioning AI skills offer sizable salary premiums compared to similar roles without AI, often 20–30% higher pay across industries. At the same time, salary surveys for data science and AI professionals highlight strong but uneven wage growth depending on job title, seniority, and industry. Remote work trends add another layer: recent U.S. studies find that remote workers historically earned a wage premium, but post-pandemic wage growth for remote roles has in some cases been slower than for in-person jobs, which may change how attractive remote work really is from a compensation standpoint.
 These trends make salary and compensation a crucial area of study in 2024. Organizations are racing to hire AI-skilled talent, some industries are seeing rapid wage increases (especially in automation and engineering roles), and regional and political differences (e.g., “red vs. blue” states) still shape the gender and skills wage gaps. Understanding how AI vs. non-AI careers compare across regions, work arrangements, and industries will help us: (1) choose roles and locations strategically, (2) prioritize specific AI skills that command the largest premiums, and (3) build a realistic, data-driven career plan rather than relying on hype or anecdotes.
 
 ---
 
-## Research Questions & Expected Findings
+# Research Questions & Expected Findings
 
 **Research Questions**
 
