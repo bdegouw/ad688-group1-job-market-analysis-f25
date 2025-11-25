@@ -1,7 +1,7 @@
 ---
 title: "Meet the Team"
 authors: 
-    - name: "Bowen de Gouw
+    - name: "Bowen de Gouw"
     - name: "Feidhelm Joyce"
     - name: "Mahnoor Khalid"
 date: today
