@@ -1,10 +1,5 @@
 ---
 title: "Career Plan"
-authors: 
-    - name: "Bowen de Gouw"
-    - name: "Feidhelm Joyce"
-    - name: "Mahnoor Khalid"
-date: today
 ---
 
 Below are the action plans that each of us intend to take to proress our career. These are a direct result of the findings produced in this research project, in addition to our previous experience, educational background and existing network.
