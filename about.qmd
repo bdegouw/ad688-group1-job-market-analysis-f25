@@ -5,60 +5,36 @@ authors:
     - name: "Feidhelm Joyce"
     - name: "Mahnoor Khalid"
 date: today
+
 ---
 
 ## Bowen de Gouw
 
-<div style="text-align: center;">
+![](images/bowen_pic.jpeg){width=150px fig-align="center"}
 
-<img src="images/bowen_pic.jpeg" width="150px">
-
-**Program**: MSc Applied Business Analytics, BU MET  
-<br>
-**Background**: Completed a Bachelor of Science in Business Administration at Boston University's Questrom Business School, then joined the MET ABA program to develop technical analytical skills. Internship experience in Business Development and Life Sciences Consulting.  
-<br>
-**Interests**: Leveraging AI/Machine Learning Skillset, Big Data, Early Career Development  
-<br>
-**Career Goals**: I strive to leverage AI and Machine Learning to enhance big data analysis, improve business effectiveness, and advance my career in the field. I’m passionate about uncovering hidden insights within consumer and sales data to drive strategic decisions for both brick-and-mortar and e-commerce platforms.
-
-</div>
+- **Program**: MSc Applied Business Analytics, BU MET
+- **Background**: Completed a Bachelor of Science in Business Administration at Boston University's Questrom Business School, then joined the MET ABA program to develop technical analytical skills. Internship experience in Business Development and Life Sciences Consulting.
+- **Interests**: Leveraging AI/Machine Learning Skillset, Big Data, Early Career Development
+- **Career Goals**: I strive to leverage AI and Machine Learning to enhance big data analysis, improve business effectiveness, and advance my career in the field. I’m passionate about uncovering hidden insights within consumer and sales data to drive strategic decisions for both brick-and-mortar and e-commerce platforms.
 
 ---
 
 ## Feidhelm Joyce
 
-<div style="text-align: center;">
+![](images/feidhelm_pic.jfif){width=150px fig-align="center"}
 
-<img src="images/feidhelm_pic.jfif" width="150px">
-
-**Program**: MSc Applied Business Analytics, BU MET  
-<br>
-**Background**: Graduate student in Applied Business Analytics at Boston University…  
-<br>
-**Interests**: Machine learning, cloud pipelines, business intelligence…  
-<br>
-**Career Goals**: Aims to become a data & analytics consultant or BI strategist…
-
-</div>
+- **Program**: MSc Applied Business Analytics, BU MET  
+- **Background**: Graduate student in Applied Business Analytics at Boston University, having graduated from Dublin City University with a bachelor's degree in Business Management in 2022. Experienced in Python, R, SQL, PySpark for data modeling, data engineering, applied analytics, statistical analysis, and cloud-based pipelines. Professional background spans financial analytics, client strategy, and fraud data analysis across both the US and Ireland.
+- **Interests**: Focused on the intersection of machine learning, workforce analytics, and business intelligence. Research interests include predictive modeling, automation impacts on employment, cloud data engineering, and applied AI for strategic decision-making. Hobbies include Hurling, Gaelic Football, Soccer, and Golf.
+- **Career Goals**: Aspire to build a career as a data and analytics consultant or business intelligence strategist, leveraging data science and automation to guide evidence-based decisions in corporate and policy settings.
 
 ---
 
 ## Mahnoor Khalid
 
-<div style="text-align: center;">
+![](images/mahnoor_pic.jfif){width=150px fig-align="center"}
 
-<img src="images/mahnoor_pic.jfif" width="150px">
-
-**Program**: MSc Applied Business Analytics, BU MET  
-<br>
-**Background**: Digital Enablement Executive at Bayer; previously at Nestlé…  
-<br>
-**Interests**: Data analytics, digital transformation, sustainability…  
-<br>
-**Career Goals**: Leverage analytics and strategy to drive global digital innovation…
-
-</div>
-
----
-
-
+- **Program**: MSc Applied Business Analytics, BU MET  
+- **Background**: Experienced Digital Enablement Executive at Bayer (2021–2025), where I launched Pakistan’s first farmer-focused digital platform, scaled loyalty programs, and drove digital transformation initiatives. Previously Supply Chain Associate at Nestlé, optimizing efficiency and vendor processes.
+- **Interests**: Data analytics, cloud technologies, digital transformation, sustainability in supply chains, as well as swimming, cooking, and sports.
+- **Career Goals**: Aspire to leverage analytics and digital transformation expertise to drive innovation in global business environments, integrating technology and strategy for measurable impact.
