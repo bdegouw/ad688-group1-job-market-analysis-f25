@@ -16,6 +16,8 @@ date: today
 ---
 
 ## Feidhelm Joyce
+
+![](feidhelm_pic.jfif)[width=150px]
 - **Program**: MSc Applied Business Analytics, BU MET  
 - **Background**: Graduate student in Applied Business Analytics at Boston University having graduated from Dublin City University with a bachelor's degree in Business Management in 2022. Experienced in Python, R, SQL, PySpark for data modeling, data engineering, applied analytics, statistical analysis, and cloud-based pipelines. Professional background spans financial analytics, client strategy, and fraud data analysis, blending technical insight with business decision-making across a range of companies from both the US & Ireland.  
 - **Interests**: Focused on the intersection of machine learning, workforce analytics, and business intelligence. Research interests include predictive modeling, automation impacts on employment, cloud-based data engineering, and applied AI for strategic decision-making. Passionate about bridging the gap between quantitative analytics and organizational transformation through scalable data solutions. Hobbies away from the desk include Hurling, Gaelic Football, Soccer & Golf.
