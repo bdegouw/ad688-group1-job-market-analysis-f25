@@ -4,3 +4,7 @@ data/lightcast_job_postings.csv
 *.deb
 quarto-*.deb
 quarto-*.deb
+
+
+
+data/jobs_in_data_2024.csv
