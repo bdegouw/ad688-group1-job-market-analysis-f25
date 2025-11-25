@@ -21,7 +21,7 @@ website:
           - text: "Linear Regression Model"
             href: linear_regression.ipynb
           - text: "Analysis #3"
-            href: feidhelm_analysis.qmd
+            href: feidhelm_analysis.ipynb
       - text: "Career Plans"
         href: career_plan.qmd
       - text: "About Us"
