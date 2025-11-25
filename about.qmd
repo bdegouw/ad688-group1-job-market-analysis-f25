@@ -9,7 +9,9 @@ date: today
 
 ## Bowen de Gouw
 
+::: center
 ![](images/bowen_pic.jpeg){width=150px}
+:::
 
 - **Program**: MSc Applied Business Analytics, BU MET
 - **Background**: Completed a Bachelor of Science in Business Administration at  Boston University's Questrom Business School, then joined the MET ABA program to develop technical analytical skills.  Internship experience in Business Development and Life Sciences Consulting. 
@@ -20,7 +22,9 @@ date: today
 
 ## Feidhelm Joyce
 
+::: center
 ![](images/feidhelm_pic.jfif){width=150px}
+:::
 
 - **Program**: MSc Applied Business Analytics, BU MET  
 - **Background**: Graduate student in Applied Business Analytics at Boston University having graduated from Dublin City University with a bachelor's degree in Business Management in 2022. Experienced in Python, R, SQL, PySpark for data modeling, data engineering, applied analytics, statistical analysis, and cloud-based pipelines. Professional background spans financial analytics, client strategy, and fraud data analysis, blending technical insight with business decision-making across a range of companies from both the US & Ireland.  
@@ -31,7 +35,9 @@ date: today
 
 ## Mahnoor Khalid
 
+::: center
 ![](images/mahnoor_pic.jfif){width=150px}
+:::
 
 - **Program**: MSc Applied Business Analytics, BU MET  
 - **Background:** Experienced Digital Enablement Executive at Bayer (2021–2025), where I launched Pakistan’s first farmer-focused digital platform, scaled loyalty programs, and drove digital transformation initiatives. Previously, Supply Chain Associate at Nestlé, optimizing efficiency and vendor processes.  
