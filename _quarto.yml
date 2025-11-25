@@ -5,7 +5,7 @@ resources:
   - plots/*
 
 website:
-  title: "AD688 Group 1, Fall 2025"
+  title: "AD688 Group 1 - Fall 2025"
   favicon: images/icon_group.png
   navbar:
     logo: images/icon_group.png
