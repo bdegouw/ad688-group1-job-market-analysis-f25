@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bowen – AD688 Group 1 - Fall 2025</title>
+<title>linear_regression – AD688 Group 1 - Fall 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,10 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -69,6 +104,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -145,27 +183,199 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Bowen</h1>
+
+
+
+<div id="69161006" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<div id="f90841aa" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>jobdata <span class="op">=</span> pd.read_csv(<span class="st">"data/jobs_in_data_2024.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="da5957a2" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>jobdata.head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
 
 
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">work_year</th>
+<th data-quarto-table-cell-role="th">experience_level</th>
+<th data-quarto-table-cell-role="th">employment_type</th>
+<th data-quarto-table-cell-role="th">job_title</th>
+<th data-quarto-table-cell-role="th">salary</th>
+<th data-quarto-table-cell-role="th">salary_currency</th>
+<th data-quarto-table-cell-role="th">salary_in_usd</th>
+<th data-quarto-table-cell-role="th">employee_residence</th>
+<th data-quarto-table-cell-role="th">work_setting</th>
+<th data-quarto-table-cell-role="th">company_location</th>
+<th data-quarto-table-cell-role="th">company_size</th>
+<th data-quarto-table-cell-role="th">job_category</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>2024</td>
+<td>Entry-level</td>
+<td>Freelance</td>
+<td>Applied Data Scientist</td>
+<td>30000</td>
+<td>USD</td>
+<td>30000</td>
+<td>United Kingdom</td>
+<td>Remote</td>
+<td>United Kingdom</td>
+<td>M</td>
+<td>Data Science and Research</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>2024</td>
+<td>Executive</td>
+<td>Full-time</td>
+<td>Business Intelligence</td>
+<td>230000</td>
+<td>USD</td>
+<td>230000</td>
+<td>United States</td>
+<td>In-person</td>
+<td>United States</td>
+<td>M</td>
+<td>BI and Visualization</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>2024</td>
+<td>Executive</td>
+<td>Full-time</td>
+<td>Business Intelligence</td>
+<td>176900</td>
+<td>USD</td>
+<td>176900</td>
+<td>United States</td>
+<td>In-person</td>
+<td>United States</td>
+<td>M</td>
+<td>BI and Visualization</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>2024</td>
+<td>Senior</td>
+<td>Full-time</td>
+<td>Data Architect</td>
+<td>171210</td>
+<td>USD</td>
+<td>171210</td>
+<td>Canada</td>
+<td>In-person</td>
+<td>Canada</td>
+<td>M</td>
+<td>Data Architecture and Modeling</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>2024</td>
+<td>Senior</td>
+<td>Full-time</td>
+<td>Data Architect</td>
+<td>92190</td>
+<td>USD</td>
+<td>92190</td>
+<td>Canada</td>
+<td>In-person</td>
+<td>Canada</td>
+<td>M</td>
+<td>Data Architecture and Modeling</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>2024</td>
+<td>Mid-level</td>
+<td>Full-time</td>
+<td>Data Science</td>
+<td>46203</td>
+<td>GBP</td>
+<td>57753</td>
+<td>United Kingdom</td>
+<td>In-person</td>
+<td>United Kingdom</td>
+<td>M</td>
+<td>Data Science and Research</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>2024</td>
+<td>Mid-level</td>
+<td>Full-time</td>
+<td>Data Science</td>
+<td>38280</td>
+<td>GBP</td>
+<td>47850</td>
+<td>United Kingdom</td>
+<td>In-person</td>
+<td>United Kingdom</td>
+<td>M</td>
+<td>Data Science and Research</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>2024</td>
+<td>Entry-level</td>
+<td>Full-time</td>
+<td>Insight Analyst</td>
+<td>50000</td>
+<td>USD</td>
+<td>50000</td>
+<td>United States</td>
+<td>Remote</td>
+<td>United States</td>
+<td>M</td>
+<td>Data Analysis</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>2024</td>
+<td>Entry-level</td>
+<td>Full-time</td>
+<td>Insight Analyst</td>
+<td>40000</td>
+<td>USD</td>
+<td>40000</td>
+<td>United States</td>
+<td>Remote</td>
+<td>United States</td>
+<td>M</td>
+<td>Data Analysis</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>2024</td>
+<td>Senior</td>
+<td>Full-time</td>
+<td>Data Engineer</td>
+<td>276000</td>
+<td>USD</td>
+<td>276000</td>
+<td>United States</td>
+<td>In-person</td>
+<td>United States</td>
+<td>M</td>
+<td>Data Engineering</td>
+</tr>
+</tbody>
+</table>
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+</div>
+</div>
+</div>
 
 
 
