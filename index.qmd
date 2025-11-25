@@ -1,6 +1,9 @@
 ---
 title: "Analyzing AI vs. Non-AI Careers"
-author: "Bowen de Gouw, Feidhelm Joyce, Mahnoor Khalid"
+authors: 
+    - name: "Bowen de Gouw
+    - name: "Feidhelm Joyce"
+    - name: "Mahnoor Khalid"
 date: today
 ---
 
@@ -19,6 +22,7 @@ These trends make salary and compensation a crucial area of study in 2024. Organ
 ## Research Questions & Expected Findings
 
 **Research Questions**
+
 - How do salaries differ across AI vs. non-AI careers?
 - What regions offer the highest-paying jobs in AI-related and traditional careers?
 - Are remote jobs better paying than in-office roles?

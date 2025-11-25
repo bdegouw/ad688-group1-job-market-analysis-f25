@@ -5,13 +5,11 @@ resources:
   - plots/*
 
 website:
-  title: "AD688-GROUP1-F25"
+  title: "AD688 Group 1, Fall 2025"
   navbar:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "About Us"
-        href: about.qmd
       - text: "Research Background"
         href: research_introduction.qmd
       - text: Analysis
@@ -24,8 +22,8 @@ website:
             href: feidhelm_analysis.qmd
       - text: "Career Plans"
         href: career_plan.qmd
-      - text: "References"
-        href: references.bib
+      - text: "About Us"
+        href: about.qmd
 
 format:
   html:

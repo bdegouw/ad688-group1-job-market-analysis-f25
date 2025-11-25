@@ -1,6 +1,10 @@
 ---
 title: "Research Introduction: AI vs. Non-AI Careers"
-author: "Team 1"
+authors: 
+    - name: "Bowen de Gouw
+    - name: "Feidhelm Joyce"
+    - name: "Mahnoor Khalid"
+date: today
 date: today
 format: 
   html:
