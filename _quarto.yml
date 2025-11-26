@@ -16,7 +16,7 @@ website:
         href: research_introduction.qmd
       - text: Analysis
         menu:
-          - text: "Salary Analysis"
+          - text: "Industry and Location Salary Analysis"
             href: job_market_salary_analysis.ipynb
           - text: "Linear Regression Model"
             href: linear_regression.ipynb
