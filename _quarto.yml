@@ -18,7 +18,7 @@ website:
         menu:
           - text: "Industry and Location Salary Analysis"
             href: job_market_salary_analysis.ipynb
-          - text: "Linear Regression Model"
+          - text: "Salary Linear Regression Model"
             href: linear_regression.ipynb
           - text: "Analysis #3"
             href: feidhelm_analysis.ipynb
