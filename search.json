@@ -70,13 +70,6 @@
     "text": "Model Evaluation\n\n# Make Predictions on Test Set\ny_pred = regressor.predict(X_test)\n\n\n# Evaluate Model Performance with RMSE\nfrom sklearn.metrics import mean_squared_error\nmse = mean_squared_error(y_test, y_pred)\nmse\n\n3202994648.2848525\n\n\n\n# Calculate RMSE\nimport numpy as np\nrmse = np.sqrt(mean_squared_error(y_test, y_pred))\nrmse\n\nnp.float64(56595.00550653611)\n\n\n\n# Calculate R-squared\nfrom sklearn.metrics import r2_score\nr2 = r2_score(y_test, y_pred)\nr2\n\n0.22973849195992302\n\n\n\n# Print Coefficients and Intercept\nprint(f\"Intercept: {regressor.intercept_}\")\n\nIntercept: 28032.068198706605"
   },
   {
-    "objectID": "feidhelm_analysis.html",
-    "href": "feidhelm_analysis.html",
-    "title": "AD688 Group 1 - Fall 2025",
-    "section": "",
-    "text": "print(\"this is where the other set of code goes\")\n\nthis is where the other set of code goes"
-  },
-  {
     "objectID": "career_plan.html",
     "href": "career_plan.html",
     "title": "Career Plan",
