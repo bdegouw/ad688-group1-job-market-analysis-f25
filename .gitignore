@@ -1,10 +1,24 @@
-/.quarto/
-**/*.quarto_ipynb
-data/lightcast_job_postings.csv
-*.deb
-quarto-*.deb
-quarto-*.deb
+# -------------------------------------------------------------------
+# General Python and VS Code Exclusions
+# -------------------------------------------------------------------
 
+# Virtual Environments
+.venv/
+venv/
+env/
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.so
 
-data/jobs_in_data_2024.csv
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# VS Code directory (Local project settings)
+.vscode/
+
+# Project-specific files you manually added
+data_in_2024.csv
+bdegouw/
