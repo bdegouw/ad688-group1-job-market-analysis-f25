@@ -24,6 +24,7 @@ data_in_2024.csv
 bdegouw/
 salaries_new.csv
 # Ignore data folder to keep large files out of Git
+Data/
 
 
 
