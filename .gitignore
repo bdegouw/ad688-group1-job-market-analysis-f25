@@ -35,3 +35,6 @@ Data/
 
 
 
+
+/.quarto/
+**/*.quarto_ipynb
