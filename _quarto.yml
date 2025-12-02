@@ -20,8 +20,8 @@ website:
             href: job_market_salary_analysis.ipynb
           - text: "Salary Linear Regression Model"
             href: linear_regression.ipynb
-          - text: "Ai Job Market Analysis"
-            href: feidhelm_analysis.ipynb
+          - text: "AI Job Market Analysis"
+            href: ai_salary_analysis.ipynb
       - text: "Career Plans"
         href: career_plan.qmd
       - text: "About Us"
