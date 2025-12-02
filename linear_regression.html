@@ -180,43 +180,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div id="69161006" class="cell">
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[19]</span><span class="ansi-green-fg">, line 24</span>
-<span class="ansi-green-fg">     20</span> <span style="font-weight:bold;color:rgb(0,135,0)">import</span><span style="color:rgb(188,188,188)"> </span><span class="ansi-blue-fg ansi-bold">os</span> <span style="font-style:italic;color:rgb(95,135,135)"># Included for the optional file saving line</span>
-<span class="ansi-green-fg">     22</span> <span style="font-style:italic;color:rgb(95,135,135)"># Set the renderer to ensure compatibility with Quarto's execution environment.</span>
-<span class="ansi-green-fg">     23</span> <span style="font-style:italic;color:rgb(95,135,135)"># This is the most reliable setting for embedding interactive charts.</span>
-<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">24</span> <span class="ansi-yellow-bg">pio</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">renderers</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">default</span> = <span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">plotly_mimetype+default</span><span class="ansi-yellow-fg">'</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">~/ad688-group1-job-market-analysis-f25/.venv/lib/python3.12/site-packages/plotly/io/_renderers.py:175</span>, in <span class="ansi-cyan-fg">RenderersConfig.default</span><span class="ansi-blue-fg">(self, value)</span>
-<span class="ansi-green-fg">    172</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    174</span> <span style="font-style:italic;color:rgb(95,135,135)"># Store defaults name and list of renderer(s)</span>
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">175</span> renderer_names = <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_validate_coerce_renderers</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">value</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    176</span> <span style="color:rgb(0,135,0)">self</span>._default_name = value
-<span class="ansi-green-fg">    177</span> <span style="color:rgb(0,135,0)">self</span>._default_renderers = [<span style="color:rgb(0,135,0)">self</span>[name] <span style="font-weight:bold;color:rgb(0,135,0)">for</span> name <span style="font-weight:bold;color:rgb(175,0,255)">in</span> renderer_names]
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">~/ad688-group1-job-market-analysis-f25/.venv/lib/python3.12/site-packages/plotly/io/_renderers.py:242</span>, in <span class="ansi-cyan-fg">RenderersConfig._validate_coerce_renderers</span><span class="ansi-blue-fg">(self, renderers_string)</span>
-<span class="ansi-green-fg">    240</span>         invalid = [name <span style="font-weight:bold;color:rgb(0,135,0)">for</span> name <span style="font-weight:bold;color:rgb(175,0,255)">in</span> renderer_names <span style="font-weight:bold;color:rgb(0,135,0)">if</span> name <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="font-weight:bold;color:rgb(175,0,255)">in</span> <span style="color:rgb(0,135,0)">self</span>]
-<span class="ansi-green-fg">    241</span>         <span style="font-weight:bold;color:rgb(0,135,0)">if</span> invalid:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">242</span>             <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-fg">    243</span> <span style="color:rgb(188,188,188)">                </span><span style="font-style:italic" class="ansi-yellow-fg">"""</span>
-<span class="ansi-green-fg">    244</span> <span style="font-style:italic" class="ansi-yellow-fg">Invalid named renderer(s) received: {}"""</span>.format(<span style="color:rgb(0,135,0)">str</span>(invalid))
-<span class="ansi-green-fg">    245</span>             )
-<span class="ansi-green-fg">    247</span>         <span style="font-weight:bold;color:rgb(0,135,0)">return</span> renderer_names
-
-<span class="ansi-red-fg">ValueError</span>: 
-Invalid named renderer(s) received: ['default']</pre>
-</div>
-</div>
-</div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <section id="exploratory-data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<div id="da5957a2" class="cell">
+<div id="da5957a2" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
@@ -396,7 +364,7 @@ Invalid named renderer(s) received: ['default']</pre>
 </div>
 </div>
 </div>
-<div id="46b8c86b" class="cell">
+<div id="46b8c86b" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>work_year             0
 experience_level      0
@@ -413,7 +381,7 @@ job_category          0
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="bf11ac02" class="cell">
+<div id="bf11ac02" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>count     14199.00000
 mean     149472.04944
@@ -426,17 +394,32 @@ max      450000.00000
 Name: salary_in_usd, dtype: float64</code></pre>
 </div>
 </div>
-<div id="a4f6e4f0" class="cell">
+<div id="a4f6e4f0" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
-<div id="bec07474" class="cell">
+<div id="c632bda0" class="cell" data-execution_count="14">
 <div class="cell-output cell-output-display">
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
-<div id="cad4c302" class="cell">
+<div id="bec07474" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
+</div>
+</div>
+<div id="570f16d0" class="cell" data-execution_count="15">
+<div class="cell-output cell-output-display">
+<pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
+</div>
+</div>
+<div id="cad4c302" class="cell" data-execution_count="16">
+<div class="cell-output cell-output-display">
+<pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
+</div>
+</div>
+<div id="7cebd368" class="cell" data-execution_count="17">
 <div class="cell-output cell-output-display">
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
@@ -444,8 +427,8 @@ Name: salary_in_usd, dtype: float64</code></pre>
 </section>
 <section id="prepare-data-for-linear-regression-model" class="level2">
 <h2 class="anchored" data-anchor-id="prepare-data-for-linear-regression-model">Prepare Data for Linear Regression Model</h2>
-<div id="c0e75f8d" class="cell">
-<div class="cell-output cell-output-display" data-execution_count="11">
+<div id="c0e75f8d" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display" data-execution_count="12">
 <div>
 
 
@@ -585,12 +568,12 @@ Name: salary_in_usd, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<div id="05b80c3f" class="cell">
+<div id="05b80c3f" class="cell" data-execution_count="13">
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
 <pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[17]</span><span class="ansi-green-fg">, line 2</span>
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[13]</span><span class="ansi-green-fg">, line 2</span>
 <span class="ansi-green-fg">      1</span> <span style="font-weight:bold;color:rgb(0,135,0)">from</span><span style="color:rgb(188,188,188)"> </span><span class="ansi-blue-fg ansi-bold">sklearn</span><span class="ansi-blue-fg ansi-bold">.</span><span class="ansi-blue-fg ansi-bold">model_selection</span><span style="color:rgb(188,188,188)"> </span><span style="font-weight:bold;color:rgb(0,135,0)">import</span> train_test_split
 <span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">2</span> X_train, X_test, y_train, y_test = train_test_split(<span class="ansi-yellow-bg">X</span>, y, test_size=<span class="ansi-green-fg">0.2</span>, random_state=<span class="ansi-green-fg">42</span>)
 
