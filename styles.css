@@ -105,3 +105,9 @@ a {
 p, li {
   text-align: justify;
 }
+
+
+/* Left-align the right-side "On this page" table of contents */
+.toc, .bd-toc, .toc-sidebar, .on-this-page, .toc-container {
+    text-align: left !important;
+}
