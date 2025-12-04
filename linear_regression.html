@@ -173,9 +173,12 @@ if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.M
 </header>
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>The aim of this section is to run a linear regression model for factors that influence Salaries within Data-related careers. The data was sourced via <a href="https://www.kaggle.com/code/murilozangari/jobs-data-field-2024-eda-salary-estimation">Kaggle</a>, which sourced the data from <a href="http://ai-job.net/">ai-jobs.net</a>, based on internal data survey submissions regarding jobs and salaries.</p>
+</section>
+<section id="eda" class="level2">
+<h2 class="anchored" data-anchor-id="eda">EDA</h2>
 <p>Below gives context to the salary range and values that are present in the dataset. We see a range from $15,000 to $450,000. The median value is $142,000.</p>
 <div id="bf11ac02" class="cell" data-execution_count="53">
 <div class="cell-output cell-output-display" data-execution_count="53">
@@ -353,6 +356,7 @@ if (outputEl) {{
 <p>Most other categories fall within a median salary range of $120,000-$150,000. These all present solid Q1 and Q3 salary values. Included in this category are Data Science and Research, Data Architecture and Modeling, Data Engineering, and Leadership and Modeling.</p>
 <p>The two most notable lower performing categories based on salary are the Data Analysis and Data Quality and Operations, with median salaries of $100,000 and $82,000 respectively. It is important to note the differences in their distribution becasue the Data Analysis Category ranges up to $430,000, whereas the Data Quality and Operations caps out at $289,000.</p>
 <p>Interestingly, Cloud and Database has the smallest total range, with the minimum value falling at $82,000 which is the highest minimum value, but the salary caps out at $190,000. The median value for the Cloud and Database Category is $146,000. These insights suggest that at an entry level this may be a high performing category, but growth opportunities are limited. BI and Visualization and Data Management and Strategy also present themselves as low growth job categories, despite still have lower Q1 and median values.</p>
+</section>
 <section id="linear-regression-model" class="level2">
 <h2 class="anchored" data-anchor-id="linear-regression-model">Linear Regression Model</h2>
 <div id="b5833088" class="cell" data-execution_count="84">
@@ -470,7 +474,6 @@ R-squared: 0.3304</code></pre>
 <p>With a R-Squared value of 0.33, we can say that we are able to explain and account for 33% of the variation in salaries for this dataset. While we are able to gain meaningful insight from this analysis, it is important to consider the additional information that could be used to analyse the variation within the dataset. These factors are including by not limited to; Country, State, City, Education Level, Relevant Work Experience, Industry, Technical Skillsets and Specific Job Titles.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
