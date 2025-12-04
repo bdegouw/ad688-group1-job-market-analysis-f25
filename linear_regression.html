@@ -175,7 +175,7 @@ if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.M
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The aim of this section is to run a linear regression model for factors that influence Salaries within Data-related careers. The data was sourced via Kaggle, which takes data from ai-jobs.net, based on internal data survey submissions regarding jobs and salaries. The dictionary can be found through the links.</p>
+<p>The aim of this section is to run a linear regression model for factors that influence Salaries within Data-related careers. The data was sourced via <a href="https://www.kaggle.com/code/murilozangari/jobs-data-field-2024-eda-salary-estimation">Kaggle</a>, which sourced the data from <a href="http://ai-job.net/">ai-jobs.net</a>, based on internal data survey submissions regarding jobs and salaries.</p>
 <p>Below gives context to the salary range and values that are present in the dataset. We see a range from $15,000 to $450,000. The median value is $142,000.</p>
 <div id="bf11ac02" class="cell" data-execution_count="53">
 <div class="cell-output cell-output-display" data-execution_count="53">
@@ -318,7 +318,7 @@ if (outputEl) {{
                         })                };            </script>        </div>
 </div>
 </div>
-<p>INTERPRETATION:</p>
+<p>The most frequent job categories are important to analyze as they demonstrate where there may be addiitional work opportunities in this filed. Data Science and Reasearch is the is the most frequent in this dataset, account for 32.9% of the data. Second is Data Engineering at 22.2%, Third is Data Analysis at 15.5% and rounding out the most notable is Machine Learning and AI. Between these four categories, which are all highly technical and skilled fields, they account for approximately 85% of the jobs in this dataset.</p>
 <div id="7cebd368" class="cell" data-execution_count="58">
 <div class="cell-output cell-output-display">
 <div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
@@ -451,31 +451,23 @@ if (outputEl) {{
 </div>
 </div>
 </div>
-<p>INTERPRETATIONS HERE:</p>
+<p>When interpreting the coefficient outputs, we can clearly see a few dominant variables that impact a salaries distribution.</p>
+<p>Experience: As expected, the level of expereince is the largest predictor of salary in this dataset. Those at an executive level may expect $80,000 more than the baseline - which is entry level. Senior and Mid-level earn $46,000 and $18,000 respectively.</p>
+<p>Job Category: Machine Learning and AI is the most dominant category, with a lift of $55,000 over the base value. Another notable increases come from Data Science and Research. The biggest determinant is from Data Quality and Operations were a -$20,000 salary decrease may be expected.</p>
+<p>Work Setting: Both In-Person and Remote Jobs provide salary increases of $18,000 and $12,000 respectively, compared to Hybrid working models.</p>
+<p>Continent: North American company locations can expect a significant increase in salary of $56,000, compared to their European counterparts.</p>
 </section>
 <section id="model-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="model-evaluation">Model Evaluation</h2>
-<div id="8a5c8e3d" class="cell" data-execution_count="88">
+<div id="4ab5acf9" class="cell" data-execution_count="100">
 <div class="cell-output cell-output-stdout">
-<pre><code>MSE: 2660102840.696729</code></pre>
+<pre><code>Intercept: $23,529.12
+RMSE: $51,576.18
+R-squared: 0.3304</code></pre>
 </div>
 </div>
-<div id="04564b25" class="cell" data-execution_count="89">
-<div class="cell-output cell-output-stdout">
-<pre><code>RMSE: 51576.18482106571</code></pre>
-</div>
-</div>
-<div id="515b7c82" class="cell" data-execution_count="90">
-<div class="cell-output cell-output-stdout">
-<pre><code>R-squared: 0.3303817848860833</code></pre>
-</div>
-</div>
-<div id="4ab5acf9" class="cell" data-execution_count="92">
-<div class="cell-output cell-output-stdout">
-<pre><code>Intercept: 23529.116282122544</code></pre>
-</div>
-</div>
-<p>INTERPRETATIONS HERE:</p>
+<p>The Intercept represents the baseline value for the linear regression model to which the coefficients can be applied with. Whilst the RMSE value seems high, this can be expected in when predicting salaries, as the error term accounts for both deviation above and below the intercept. The dataset does not include any salaries below $15,000, so this is important to consider when applying the error term to the intercept and coefficient values.</p>
+<p>With a R-Squared value of 0.33, we can say that we are able to explain and account for 33% of the variation in salaries for this dataset. While we are able to gain meaningful insight from this analysis, it is important to consider the additional information that could be used to analyse the variation within the dataset. These factors are including by not limited to; Country, State, City, Education Level, Relevant Work Experience, Industry, Technical Skillsets and Specific Job Titles.</p>
 
 
 </section>
