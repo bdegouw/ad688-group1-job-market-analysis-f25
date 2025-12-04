@@ -13,7 +13,6 @@ format:
 ---
 Background Research
 ---
-## Reminder to Link Citations
 
 The research study “From Junior to Senior: Skill Requirements for AI Professionals Across Career Stages”, by @peretz2025junior provides clear context for understanding salary and compensation trends in AI careers. The study analyzed nearly 19,000 LinkedIn job postings, in which it showed that senior AI roles dominated the market with 67.4% of AI postings. Demand for these jobs not only included technical expertise in Python, AWS and deep learning, but commanded a high demand for leadership, communication, and strategic skills, which all lead to higher compensation. In contrast, the junior AI positions emphasised the importance of foundational technical skillsets, including Python, SQL, and machine learning, reflecting the lower entry-level pay, but a strong potential for career growth. The findings for the research also suggested that in 2024, industries that invested heavily in AI, such as Technology, Finance and Healthcare, likely experienced the largest wage growth, as they seek AI professionals who can bridge their technical skillset with innovation. The research rationale lies in the understanding of how skill specialization and AI literacy directly enhance employability and salary prospects. It focuses on how crucial it is for new entrants to identify which skills and career path yields the highest returns. 
 
