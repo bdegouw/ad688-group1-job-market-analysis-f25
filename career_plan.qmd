@@ -49,3 +49,6 @@ Below are the action plans that each of us intend to take to proress our career.
 
 ---
 
+### Team Skill Comparison (Interactive)
+
+{{< include plots/team_comparison_plotly_spider.html >}}
