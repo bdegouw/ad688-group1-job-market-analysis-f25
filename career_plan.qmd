@@ -1,5 +1,6 @@
 ---
 title: "Career Plan"
+toc: False
 ---
 
 Below are the action plans that each of us intend to take to proress our career. These are a direct result of the findings produced in this research project, in addition to our previous experience, educational background and existing network.
@@ -51,4 +52,8 @@ Below are the action plans that each of us intend to take to proress our career.
 
 ### Team Skill Comparison 
 
-<iframe src="plots/team_comparison_plotly_spider.html" width="900" height="700" style="border:none;"></iframe>
+<iframe src="plots/team_comparison_plotly_spider.html" 
+    width="100%" 
+    height="700" 
+    style="border:none; min-width: 1000px;">
+</iframe>
