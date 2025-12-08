@@ -109,14 +109,14 @@
     "href": "career_plan.html",
     "title": "Career Plan",
     "section": "",
-    "text": "Below are the action plans that each of us intend to take to proress our career. These are a direct result of the findings produced in this research project, in addition to our previous experience, educational background and existing network."
+    "text": "Below are the action plans each of us intends to take to progress our careers. These plans are a direct result of the findings from this research project, combined with our prior experience, educational background, and existing networks."
   },
   {
     "objectID": "career_plan.html#bowen-de-gouw",
     "href": "career_plan.html#bowen-de-gouw",
     "title": "Career Plan",
     "section": "Bowen de Gouw",
-    "text": "Bowen de Gouw\nSkill Development Priorities: Continue to enhance AI/Machine Learning\nNetworking and Industry Positioning: Continue to expand networking within the industry, targeting both AI/Machine Leaning specialists and Industry Specialists (Consumer Packaged Goods, Financial Technology, Digital Marketing)\nTarget Roles: Business Data Analyst, Financial Analyst, Sales Analyst, Marketing Analyst\nCompany and Industry Interests: Consumer Packaged Goods & Retail, Financial Technology, E-Commerce, Digital Marketing\nApplication Strategy: Develop a strong network across various industry interests, apply to targeted roles with specific referrals"
+    "text": "Bowen de Gouw\nSkill Development Priorities: Continue strengthening AI and machine learning capabilities, with an emphasis on leveraging big data to generate quantitative insights within key business frameworks. Prioritize deepening proficiency in Python and SQL to support advanced analytics, modeling, and data-driven decision-making.\nNetworking and Industry Positioning: Continue expanding industry networks by engaging both AI/Machine Learning specialists and domain experts across Consumer Packaged Goods, Financial Technology, and Digital Marketing.\nTarget Roles: Business Data Analyst, Financial Analyst, Sales Analyst, Marketing Analyst, Data Analyst, Data Scientist, Machine Learning Analyst,\nCompany and Industry Interests: Consumer Packaged Goods & Retail, Financial Technology, E-Commerce, Digital Marketing, SaaS, EdTech\nApplication Strategy: Build a strong, cross-industry professional network and pursue targeted roles supported by high-quality referrals. Additionally, develop a polished personal portfolio website to showcase relevant work and strengthen application materials."
   },
   {
     "objectID": "career_plan.html#feidhelm-joyce",
@@ -130,7 +130,7 @@
     "href": "career_plan.html#mahnoor-khalid",
     "title": "Career Plan",
     "section": "Mahnoor Khalid",
-    "text": "Mahnoor Khalid\nSkill Development Priorities: Advancing expertise in predictive modeling, cloud-based analytics, and scalable data engineering to drive higher-impact decision solutions.\nNetworking and Industry Positioning: Positioning as an emerging analytics leader by showcasing high-impact ML projects, cross-functional enablement work, and domain expertise in digital transformation.\nTarget Roles: Targeting data analyst, business analytics, and machine learning–focused roles that leverage technical depth and cross-functional problem-solving.\nCompany and Industry Interests: Interested in data-forward organizations across tech, CPG, agriculture-tech, consulting, and cloud-driven industries that value analytical innovation and automation.\nApplication Strategy: Leveraging quantified impact, ML-driven achievements, and automation successes to craft tailored applications that highlight both technical capability and business influence.\n\n\nTeam Skill Comparison"
+    "text": "Mahnoor Khalid\nSkill Development Priorities: Advancing expertise in predictive modeling, cloud-based analytics, and scalable data engineering to drive higher-impact decision solutions.\nNetworking and Industry Positioning: Positioning as an emerging analytics leader by showcasing high-impact ML projects, cross-functional enablement work, and domain expertise in digital transformation.\nTarget Roles: Targeting data analyst, business analytics, and machine learning–focused roles that leverage technical depth and cross-functional problem-solving.\nCompany and Industry Interests: Interested in data-forward organizations across tech, CPG, agriculture-tech, consulting, and cloud-driven industries that value analytical innovation and automation.\nApplication Strategy: Leveraging quantified impact, ML-driven achievements, and automation successes to craft tailored applications that highlight both technical capability and business influence.\n\n\nTeam Skill Comparison\n\n\n\n```markdown ## Skill Ratings Heatmap\n```{} import pandas as pd import plotly.graph_objects as go"
   },
   {
     "objectID": "research_introduction.html",
