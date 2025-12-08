@@ -52,7 +52,6 @@ Below are the action plans each of us intends to take to progress our careers. T
 
 **Application Strategy:** Leveraging quantified impact, ML-driven achievements, and automation successes to craft tailored applications that highlight both technical capability and business influence.
 
----
 
 ### Team Skill Comparison 
 
@@ -62,12 +61,9 @@ Below are the action plans each of us intends to take to progress our careers. T
     style="border:none; min-width: 1000px;">
 </iframe>
 
---- 
-
-```markdown
 ## Skill Ratings Heatmap
 
-```{}
+```{python}
 import pandas as pd
 import plotly.graph_objects as go
 
@@ -76,7 +72,7 @@ data = {
     "Skill": ["AWS Cloud", "Python", "SQL", "R", "Tableau", "Excel", "PySpark", "PowerBI", "GitHub", "Hadoop"],
     "Bowen":   [2, 4, 4, 3, 3, 5, 1, 5, 3, 1],
     "Mahnoor": [4, 4, 3, 2, 5, 5, 4, 5, 4, 3],
-    "Feidhelm":[3, 4, 3, 3, 3, 4, 2, 5, 4, 1]
+    "Feidhelm": [3, 4, 3, 3, 3, 4, 2, 5, 4, 1]
 }
 
 df = pd.DataFrame(data)
@@ -84,7 +80,7 @@ df = pd.DataFrame(data)
 # Prepare inputs for the heatmap
 skills = df["Skill"].tolist()
 people = ["Bowen", "Mahnoor", "Feidhelm"]
-z_values = df[people].values  # matrix of ratings
+z_values = df[people].values
 
 # Create Plotly heatmap
 fig = go.Figure(
@@ -102,4 +98,5 @@ fig.update_layout(
     yaxis_title="Skill"
 )
 
-fig
+fig  # display in Quarto
+```
