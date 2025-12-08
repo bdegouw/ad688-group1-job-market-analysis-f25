@@ -63,7 +63,9 @@ Below are the action plans each of us intends to take to progress our careers. T
 
 ## Skill Ratings Heatmap
 
-```{python echo=False}
+```{}
+#| echo: false
+
 import pandas as pd
 import plotly.graph_objects as go
 
@@ -100,3 +102,4 @@ fig.update_layout(
 
 fig  # display in Quarto
 ```
+
