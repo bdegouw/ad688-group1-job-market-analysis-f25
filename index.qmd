@@ -49,5 +49,5 @@ Remote vs. in-office pay
 
 Industry wage growth in 2024
 
-- H7: Industries tied to automation, control systems, and advanced manufacturing will show some of the strongest year-over-year wage growth, in line with 2024 salary surveys for engineering and automation professionals. Automation.com
+- H7: Industries tied to automation, control systems, and advanced manufacturing will show some of the strongest year-over-year wage growth, in line with 2024 salary surveys for engineering and automation professionals.
 - H8: Highly regulated, high-margin sectors (finance, pharma, healthcare) will show both high AI adoption and strong salary growth for AI-adjacent role
