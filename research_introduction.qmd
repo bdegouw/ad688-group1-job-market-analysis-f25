@@ -9,7 +9,7 @@ format:
   html:
     bibliography: references.bib
     csl: csl/econometrica.csl
-    toc: true
+    toc: False
 ---
 Background Research
 ---

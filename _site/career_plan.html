@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -141,20 +141,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#bowen-de-gouw" id="toc-bowen-de-gouw" class="nav-link active" data-scroll-target="#bowen-de-gouw">Bowen de Gouw</a></li>
-  <li><a href="#feidhelm-joyce" id="toc-feidhelm-joyce" class="nav-link" data-scroll-target="#feidhelm-joyce">Feidhelm Joyce</a></li>
-  <li><a href="#mahnoor-khalid" id="toc-mahnoor-khalid" class="nav-link" data-scroll-target="#mahnoor-khalid">Mahnoor Khalid</a>
-  <ul class="collapse">
-  <li><a href="#team-skill-comparison" id="toc-team-skill-comparison" class="nav-link" data-scroll-target="#team-skill-comparison">Team Skill Comparison</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -177,15 +164,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Below are the action plans that each of us intend to take to proress our career. These are a direct result of the findings produced in this research project, in addition to our previous experience, educational background and existing network.</p>
+<p>Below are the action plans each of us intends to take to progress our careers. These plans are a direct result of the findings from this research project, combined with our prior experience, educational background, and existing networks.</p>
 <hr>
 <section id="bowen-de-gouw" class="level2">
 <h2 class="anchored" data-anchor-id="bowen-de-gouw">Bowen de Gouw</h2>
-<p><strong>Skill Development Priorities:</strong> Continue to enhance AI/Machine Learning</p>
-<p><strong>Networking and Industry Positioning:</strong> Continue to expand networking within the industry, targeting both AI/Machine Leaning specialists and Industry Specialists (Consumer Packaged Goods, Financial Technology, Digital Marketing)</p>
-<p><strong>Target Roles:</strong> Business Data Analyst, Financial Analyst, Sales Analyst, Marketing Analyst</p>
-<p><strong>Company and Industry Interests:</strong> Consumer Packaged Goods &amp; Retail, Financial Technology, E-Commerce, Digital Marketing</p>
-<p><strong>Application Strategy:</strong> Develop a strong network across various industry interests, apply to targeted roles with specific referrals</p>
+<p><strong>Skill Development Priorities:</strong> Continue strengthening AI and machine learning capabilities, with an emphasis on leveraging big data to generate quantitative insights within key business frameworks. Prioritize deepening proficiency in Python and SQL to support advanced analytics, modeling, and data-driven decision-making.</p>
+<p><strong>Networking and Industry Positioning:</strong> Continue expanding industry networks by engaging both AI/Machine Learning specialists and domain experts across Consumer Packaged Goods, Financial Technology, and Digital Marketing.</p>
+<p><strong>Target Roles:</strong> Business Data Analyst, Financial Analyst, Sales Analyst, Marketing Analyst, Data Analyst, Data Scientist, Machine Learning Analyst,</p>
+<p><strong>Company and Industry Interests:</strong> Consumer Packaged Goods &amp; Retail, Financial Technology, E-Commerce, Digital Marketing, SaaS, EdTech</p>
+<p><strong>Application Strategy:</strong> Build a strong, cross-industry professional network and pursue targeted roles supported by high-quality referrals. Additionally, develop a polished personal portfolio website to showcase relevant work and strengthen application materials.</p>
 <hr>
 </section>
 <section id="feidhelm-joyce" class="level2">
@@ -204,14 +191,53 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Target Roles:</strong> Targeting data analyst, business analytics, and machine learning–focused roles that leverage technical depth and cross-functional problem-solving.</p>
 <p><strong>Company and Industry Interests:</strong> Interested in data-forward organizations across tech, CPG, agriculture-tech, consulting, and cloud-driven industries that value analytical innovation and automation.</p>
 <p><strong>Application Strategy:</strong> Leveraging quantified impact, ML-driven achievements, and automation successes to craft tailored applications that highlight both technical capability and business influence.</p>
-<hr>
 <section id="team-skill-comparison" class="level3">
 <h3 class="anchored" data-anchor-id="team-skill-comparison">Team Skill Comparison</h3>
-<iframe src="plots/team_comparison_plotly_spider.html" width="900" height="700" style="border:none;">
+<iframe src="plots/team_comparison_plotly_spider.html" width="100%" height="700" style="border:none; min-width: 1000px;">
 </iframe>
-
-
 </section>
+</section>
+<section id="skill-ratings-heatmap" class="level2">
+<h2 class="anchored" data-anchor-id="skill-ratings-heatmap">Skill Ratings Heatmap</h2>
+<pre><code>#| echo: false
+
+import pandas as pd
+import plotly.graph_objects as go
+
+# Build the DataFrame
+data = {
+    "Skill": ["AWS Cloud", "Python", "SQL", "R", "Tableau", "Excel", "PySpark", "PowerBI", "GitHub", "Hadoop"],
+    "Bowen":   [2, 4, 4, 3, 3, 5, 1, 5, 3, 1],
+    "Mahnoor": [4, 4, 3, 2, 5, 5, 4, 5, 4, 3],
+    "Feidhelm": [3, 4, 3, 3, 3, 4, 2, 5, 4, 1]
+}
+
+df = pd.DataFrame(data)
+
+# Prepare inputs for the heatmap
+skills = df["Skill"].tolist()
+people = ["Bowen", "Mahnoor", "Feidhelm"]
+z_values = df[people].values
+
+# Create Plotly heatmap
+fig = go.Figure(
+    data=go.Heatmap(
+        z=z_values,
+        x=people,
+        y=skills,
+        colorbar=dict(title="Rating")
+    )
+)
+
+fig.update_layout(
+    title="Skill Ratings Heatmap",
+    xaxis_title="Person",
+    yaxis_title="Skill"
+)
+
+fig  # display in Quarto</code></pre>
+
+
 </section>
 
 </main> <!-- /main -->
