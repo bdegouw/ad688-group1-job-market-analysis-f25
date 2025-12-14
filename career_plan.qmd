@@ -68,8 +68,8 @@ Below are the action plans each of us intends to take to progress our careers. T
 
 import pandas as pd
 import plotly.graph_objects as go
+import os
 
-# Build the DataFrame
 data = {
     "Skill": ["AWS Cloud", "Python", "SQL", "R", "Tableau", "Excel", "PySpark", "PowerBI", "GitHub", "Hadoop"],
     "Bowen":   [2, 4, 4, 3, 3, 5, 1, 5, 3, 1],
@@ -79,17 +79,11 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Prepare inputs for the heatmap
-skills = df["Skill"].tolist()
-people = ["Bowen", "Mahnoor", "Feidhelm"]
-z_values = df[people].values
-
-# Create Plotly heatmap
 fig = go.Figure(
     data=go.Heatmap(
-        z=z_values,
-        x=people,
-        y=skills,
+        z=df[["Bowen", "Mahnoor", "Feidhelm"]].values,
+        x=["Bowen", "Mahnoor", "Feidhelm"],
+        y=df["Skill"].tolist(),
         colorbar=dict(title="Rating")
     )
 )
@@ -100,6 +94,10 @@ fig.update_layout(
     yaxis_title="Skill"
 )
 
-fig  # display in Quarto
+os.makedirs("plots", exist_ok=True)
+fig.write_html(
+    "plots/team_skill_heatmap.html",
+    include_plotlyjs="cdn"
+)
 ```
 
