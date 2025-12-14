@@ -63,7 +63,7 @@ Below are the action plans each of us intends to take to progress our careers. T
 
 ## Skill Ratings Heatmap
 
-```{}
+```{Python}
 #| echo: false
 
 import pandas as pd
